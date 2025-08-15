@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block title%} Gallery {% endblock%}
+
+{% block extra_css %} <link rel="stylesheet" href="{% static 'css/gallery.css' %}"/>
+{% endblock %}
+
+{% block content %}
+<div class="gallery-container">
+    <header class="gallery-header">
+        <h1>Our Wedding Photography Gallery</h1>
+        <p>Capturing your special moments with love and artistry</p>
+        
+        <div class="category-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            {% for category in categories %}
+                <button class="filter-btn" data-filter="{{ category }}">{{ category|title }}</button>
+            {% endfor %}
+        </div>
+    </header>
+
+    <div class="gallery-grid">
+        {% for image in images %}
+        <div class="gallery-item" data-category="{{ image.category }}">
+            <img src="{{ image.image.url }}" alt="{{ image.title }}" loading="lazy">
+            <div class="image-overlay">
+                <h3>{{ image.title }}</h3>
+                <p>{{ image.category|title }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Lightbox Modal -->
+<div class="lightbox" id="lightbox">
+    <span class="close-btn">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+</div>
+{% endblock %}

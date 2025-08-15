@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><a href="{% url 'student_create' %}">add new Student</a></p>
+    <h2>{{ student_detail.name}} </h2>
+    <p>{{ student_detail.department}}</p>
+    <p>Age: {{ student_detail.age}} yrs</p>
+
+    <p><a href="{% url 'student_delete' pk=student_detail.id %}">delete</a></p>
+    
+
+</body>
+</html>
