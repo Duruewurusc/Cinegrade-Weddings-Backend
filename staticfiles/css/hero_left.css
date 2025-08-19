@@ -1,0 +1,58 @@
+/* Hero Section */
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    padding-left: 5%;
+}
+
+/* Ensure text appears naturally */
+.hero-content {
+    text-align: left; /* Align text to the left */
+    max-width: 600px;
+}
+
+.hero-title {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff; /* Dark font color */
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+/* Hero Buttons */
+.hero-buttons .btn {
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.btn-light-gray {
+    background-color: #353535;
+    color: white;
+}
+
+.btn-light-gray:hover {
+    background-color: #b0b0b0;
+}
+
+.btn-outline-light {
+    border: 2px solid #ffffff; /* Dark border */
+    color: #ffffff;
+}
+
+.btn-outline-light:hover {
+    background-color: #212529;
+    color: white;
+}

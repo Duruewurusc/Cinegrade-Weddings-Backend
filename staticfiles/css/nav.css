@@ -1,0 +1,31 @@
+/* Ensure the navbar text color is dark */
+
+nav {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+.navbar-nav .nav-link {
+    color: #212529 !important;  /* Dark color */
+    font-weight: 500;
+}
+
+/* Change dropdown text color */
+.dropdown-menu .dropdown-item {
+    color: #212529;
+}
+
+/* Ensure buttons have correct styles */
+.btn-outline-dark {
+    border-color: #212529;
+    color: #212529;
+}
+
+.btn-outline-dark:hover {
+    background-color: #212529;
+    color: white;
+}
+
+.btn-dark {
+    background-color: #212529;
+    color: white;
+}
+
