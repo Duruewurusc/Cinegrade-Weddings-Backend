@@ -1,0 +1,983 @@
+[
+
+{
+  "model": "gallery.galleryimage",
+  "pk": 1,
+  "fields": {
+    "title": "",
+    "src": "gallery/358A0111.jpg",
+    "category": "wedding",
+    "date_taken": "2025-06-15",
+    "slug": "",
+    "featured": false
+  }
+},
+{
+  "model": "gallery.galleryimage",
+  "pk": 2,
+  "fields": {
+    "title": "",
+    "src": "gallery/img-4_5MV5t9S.jpg",
+    "category": "wedding",
+    "date_taken": null,
+    "slug": "",
+    "featured": false
+  }
+},
+{
+  "model": "gallery.galleryimage",
+  "pk": 3,
+  "fields": {
+    "title": "",
+    "src": "gallery/img-8.jpg",
+    "category": "wedding",
+    "date_taken": "2025-06-15",
+    "slug": "",
+    "featured": false
+  }
+},
+{
+  "model": "gallery.galleryimage",
+  "pk": 4,
+  "fields": {
+    "title": "",
+    "src": "gallery/img-10.jpg",
+    "category": "wedding",
+    "date_taken": "2025-06-15",
+    "slug": "",
+    "featured": false
+  }
+},
+{
+  "model": "gallery.galleryimage",
+  "pk": 5,
+  "fields": {
+    "title": "",
+    "src": "gallery/img-11.jpg",
+    "category": "wedding",
+    "date_taken": null,
+    "slug": "",
+    "featured": false
+  }
+},
+{
+  "model": "gallery.galleryimage",
+  "pk": 6,
+  "fields": {
+    "title": "",
+    "src": "gallery/img-14.jpg",
+    "category": "engagement",
+    "date_taken": "2025-06-17",
+    "slug": "",
+    "featured": false
+  }
+},
+{
+  "model": "gallery.galleryimage",
+  "pk": 7,
+  "fields": {
+    "title": "",
+    "src": "gallery/img-7.jpg",
+    "category": "wedding",
+    "date_taken": null,
+    "slug": "",
+    "featured": false
+  }
+},
+{
+  "model": "gallery.galleryimage",
+  "pk": 8,
+  "fields": {
+    "title": "",
+    "src": "gallery/TUGO7395.jpg",
+    "category": "wedding",
+    "date_taken": null,
+    "slug": "",
+    "featured": false
+  }
+},
+{
+  "model": "gallery.galleryimage",
+  "pk": 9,
+  "fields": {
+    "title": "",
+    "src": "gallery/DSC06428.jpg",
+    "category": "wedding",
+    "date_taken": null,
+    "slug": "",
+    "featured": false
+  }
+},
+{
+  "model": "gallery.galleryimage",
+  "pk": 10,
+  "fields": {
+    "title": "",
+    "src": "gallery/TUGO8158.jpg",
+    "category": "wedding",
+    "date_taken": null,
+    "slug": "",
+    "featured": false
+  }
+},
+{
+  "model": "company_info.companyinfo",
+  "pk": 1,
+  "fields": {
+    "name": "CineGRADE VISUALS",
+    "logo": "company_logos/cinegrade_weddings_website_WEB.png",
+    "email": "cinegradeweddings@gmail.com",
+    "phone": "07037663132",
+    "address": "23 Forest Crescent GRA Enugu",
+    "website": "http://www.cinegradeweddings.com",
+    "brand_message": "",
+    "who_we_are": "",
+    "facebook": null,
+    "instagram": null,
+    "twitter": null,
+    "linkedin": null,
+    "bank": null,
+    "account_number": null,
+    "created_at": "2025-05-23T11:58:08.522Z",
+    "updated_at": "2025-05-23T11:58:08.522Z"
+  }
+},
+{
+  "model": "users.client",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$u5eMYkO23Dn1xLUproNWfR$jG451tUdHZpK0KW6/fU1nizyMMF0irOFbUrXTW6aimw=",
+    "last_login": "2025-08-20T12:07:50.992Z",
+    "is_superuser": true,
+    "username": "Sam",
+    "first_name": "Duruewuru",
+    "last_name": "Chukwuemeka",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-05-23T10:43:05Z",
+    "event_role": "",
+    "address": "Electronic Engineering Department University of Nigeria. Nsukka",
+    "instagram_handle": "",
+    "phone": "+2347037663132",
+    "trad_anniversary": null,
+    "wedding_anniversary": null,
+    "spouse_name": "",
+    "spouse_phone": "",
+    "spouse_email": "",
+    "spouse_instagram": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.client",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$HvuiF5vv8vp1pBopdt4eQq$ZRAWGp+g6xjeQyS3PJrX1YdN/vCGjJModSc5bV5+ji8=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Christian92",
+    "first_name": "Christian",
+    "last_name": "Chukwu",
+    "email": "duruewurusamuel@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-05-27T10:49:42.227Z",
+    "event_role": "",
+    "address": "Canada",
+    "instagram_handle": "",
+    "phone": "+2347037663132",
+    "trad_anniversary": null,
+    "wedding_anniversary": null,
+    "spouse_name": "",
+    "spouse_phone": "",
+    "spouse_email": "",
+    "spouse_instagram": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.client",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$IEOFaEnbsrjlCcdBuiu5Le$s61v5kBk/BERyfsQ0tPH13sA/yd8ctW4X1MiaXx2MEE=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "vera2",
+    "first_name": "Olivera",
+    "last_name": "okeke",
+    "email": "duruugo67@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-05-27T12:25:44.215Z",
+    "event_role": "",
+    "address": "23 Forest Crescent GRA Enugu",
+    "instagram_handle": "",
+    "phone": "",
+    "trad_anniversary": null,
+    "wedding_anniversary": null,
+    "spouse_name": "",
+    "spouse_phone": "",
+    "spouse_email": "",
+    "spouse_instagram": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.client",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$FQ6en5ZxtL76qSGJ15FEXv$759IPPAmnvpLIa0tRijtc1D8a+hWZy6CuxOFnbIoTFQ=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "tobit",
+    "first_name": "",
+    "last_name": "",
+    "email": "duruugo67@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-05-27T12:38:50.056Z",
+    "event_role": "",
+    "address": "23 Forest Crescent GRA Enugu",
+    "instagram_handle": "",
+    "phone": "+2348145398004",
+    "trad_anniversary": null,
+    "wedding_anniversary": null,
+    "spouse_name": "",
+    "spouse_phone": "",
+    "spouse_email": "",
+    "spouse_instagram": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.client",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$3gmmox5KsyVIHHZ9fkF56O$L6y+ihxfCYbEw/YdhWwPTNB8WqvnM3qzOmB9+LiUNIY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mekus",
+    "first_name": "Christian",
+    "last_name": "Chukwu",
+    "email": "duruugo67@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-05-27T13:06:44.101Z",
+    "event_role": "",
+    "address": "23 Forest Crescent GRA Enugu",
+    "instagram_handle": "",
+    "phone": "+2348145398004",
+    "trad_anniversary": null,
+    "wedding_anniversary": null,
+    "spouse_name": "",
+    "spouse_phone": "",
+    "spouse_email": "",
+    "spouse_instagram": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.client",
+  "pk": 6,
+  "fields": {
+    "password": "thelord1",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "ashleyconsty",
+    "first_name": "Ashley",
+    "last_name": "Lemonwu",
+    "email": "Ashley@gmail.com",
+    "is_staff": false,
+    "is_active": false,
+    "date_joined": "2025-06-20T21:53:00Z",
+    "event_role": "Relation",
+    "address": "",
+    "instagram_handle": "",
+    "phone": "+2347037663132",
+    "trad_anniversary": null,
+    "wedding_anniversary": null,
+    "spouse_name": "",
+    "spouse_phone": "",
+    "spouse_email": "",
+    "spouse_instagram": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.client",
+  "pk": 8,
+  "fields": {
+    "password": "thelord1i@",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "DaTreasure",
+    "first_name": "Ada Treasure",
+    "last_name": "Ogbodo",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-07-02T23:06:41Z",
+    "event_role": "",
+    "address": "",
+    "instagram_handle": "",
+    "phone": "+2348066396683",
+    "trad_anniversary": "2025-07-02",
+    "wedding_anniversary": "2025-07-02",
+    "spouse_name": "",
+    "spouse_phone": "",
+    "spouse_email": "",
+    "spouse_instagram": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.client",
+  "pk": 10,
+  "fields": {
+    "password": "thelord",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Samcee",
+    "first_name": "Duruewuru",
+    "last_name": "Chukwuemeka",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-07-03T00:32:43Z",
+    "event_role": "",
+    "address": "Electronic Engineering Department University of Nigeria. Nsukka",
+    "instagram_handle": "",
+    "phone": "+2347037663133",
+    "trad_anniversary": null,
+    "wedding_anniversary": null,
+    "spouse_name": "",
+    "spouse_phone": "",
+    "spouse_email": "",
+    "spouse_instagram": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.testimonial",
+  "pk": 1,
+  "fields": {
+    "name": "Chinwe & Emeka",
+    "location": "Lagos, Nigeria",
+    "role_or_company": null,
+    "content": "Cinegrade Weddings captured every moment perfectly. We relive our day every time we watch our video. Absolutely magical!",
+    "rating": 5,
+    "image": "",
+    "is_featured": true,
+    "created_at": "2025-06-18T12:41:53.557Z",
+    "updated_at": "2025-06-18T13:09:01.738Z"
+  }
+},
+{
+  "model": "users.testimonial",
+  "pk": 2,
+  "fields": {
+    "name": "Amara & Tobi",
+    "location": "Enugu, Nigeria",
+    "role_or_company": null,
+    "content": "From start to finish, the team was professional and attentive. The editing and storytelling were beyond our expectations.",
+    "rating": 5,
+    "image": "",
+    "is_featured": true,
+    "created_at": "2025-06-18T12:43:58.761Z",
+    "updated_at": "2025-06-18T13:09:13.556Z"
+  }
+},
+{
+  "model": "users.testimonial",
+  "pk": 3,
+  "fields": {
+    "name": "Ade & Uche",
+    "location": "London, UK",
+    "role_or_company": null,
+    "content": "We flew in for our traditional wedding and Cinegrade gave us something weÆll treasure forever. Thank you for making it timeless!",
+    "rating": 4,
+    "image": "",
+    "is_featured": true,
+    "created_at": "2025-06-18T12:44:51.339Z",
+    "updated_at": "2025-06-18T13:09:20.020Z"
+  }
+},
+{
+  "model": "users.testimonial",
+  "pk": 4,
+  "fields": {
+    "name": "Ada & Kene",
+    "location": "Ontario Canada",
+    "role_or_company": null,
+    "content": "CineGRADE Weddings is the best",
+    "rating": 5,
+    "image": "",
+    "is_featured": false,
+    "created_at": "2025-06-18T14:12:07.159Z",
+    "updated_at": "2025-06-18T14:12:07.160Z"
+  }
+},
+{
+  "model": "events.package",
+  "pk": 1,
+  "fields": {
+    "package_name": "Deluxe Art video",
+    "category": "video",
+    "price": "700000.00",
+    "description": "Full Day Event Videography Package",
+    "deliverables": "Complete day coverage*,\r\nTwo Videographers,\r\nOne Drone Pilot,\r\nFull Sound Assistant,\r\nFull length Video of The Wedding Event,\r\n2-3 Mins Wedding Trailer,\r\n10 mins Highlight Video,\r\nOnline Video Upload,\r\nUSB thumb Drive",
+    "duration": "Full day",
+    "is_popular": true,
+    "image": "package_images/DSC06518.jpg",
+    "created_at": "2025-05-23T11:18:55.039Z"
+  }
+},
+{
+  "model": "events.package",
+  "pk": 2,
+  "fields": {
+    "package_name": "Basic Art Video",
+    "category": "video",
+    "price": "300000.00",
+    "description": "Full Day Event Videography package",
+    "deliverables": "Complete day coverage,\r\nOne videographer,\r\nOne Minute Wedding Highlight,\r\nFull Length Event Video,\r\nUSB Thumb Drive",
+    "duration": "Full day",
+    "is_popular": false,
+    "image": "package_images/DSC06276.jpg",
+    "created_at": "2025-05-23T11:22:41.201Z"
+  }
+},
+{
+  "model": "events.package",
+  "pk": 3,
+  "fields": {
+    "package_name": "Photo Basic",
+    "category": "photo",
+    "price": "350000.00",
+    "description": "Full Day Event Photography",
+    "deliverables": "Full wedding day photography coverage,\r\nOne photographer,\r\n150 Individually Edited Images,\r\nUSB thumb Drive of entire Wedding Images,\r\nOnline Viewing Gallery",
+    "duration": "Full day",
+    "is_popular": false,
+    "image": "package_images/DSC06515.jpg",
+    "created_at": "2025-05-23T11:25:49.700Z"
+  }
+},
+{
+  "model": "events.package",
+  "pk": 4,
+  "fields": {
+    "package_name": "Diamond Combo",
+    "category": "combo",
+    "price": "1500000.00",
+    "description": "Full Day Event Photography and Videography",
+    "deliverables": "Full wedding day photography coverage\r\nTwo photographers,\r\n Two Videographers,\r\n Drone Coverage,\r\n 3-5mins Event highlight Video,\r\n Full length Video on USB Drive or DVD,\r\n Softcopies of Entire wedding Images,\r\n Two 12x36 Inch Synthetic Photobook ,\r\n Mini Photobook and Calendar,\r\n Three 16x20 Inch Enlargement Frame\r\n Complementary Prewedding Photoshoot",
+    "duration": "Full day",
+    "is_popular": true,
+    "image": "package_images/img-5_0lFVb4r.jpg",
+    "created_at": "2025-05-23T11:31:06.148Z"
+  }
+},
+{
+  "model": "events.package",
+  "pk": 5,
+  "fields": {
+    "package_name": "Gold Combo",
+    "category": "combo",
+    "price": "1250000.00",
+    "description": "",
+    "deliverables": "Full wedding day photography coverage,\r\nTwo photographer,\r\nTwo Videographer,\r\n3-5mins Event Highlight video,\r\nFull Length Video on USB Drive,\r\nSoftcopies of Entire Wedding Images,\r\nOne 12X24Inch Synthetic Photobook,\r\nThree16x20Inch Enlargement Frame,",
+    "duration": "Full day",
+    "is_popular": false,
+    "image": "package_images/358A2585.jpg",
+    "created_at": "2025-05-23T11:35:02.927Z"
+  }
+},
+{
+  "model": "events.addon",
+  "pk": 1,
+  "fields": {
+    "name": "Extra Photographer",
+    "description": "1x photographer",
+    "price": "1500000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "events.addon",
+  "pk": 2,
+  "fields": {
+    "name": "Drone Coverage",
+    "description": "4k UHD Drone coverage",
+    "price": "100000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "events.addon",
+  "pk": 3,
+  "fields": {
+    "name": "Extra Videographer",
+    "description": "1x Videographer",
+    "price": "100000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "events.addon",
+  "pk": 6,
+  "fields": {
+    "name": "logistics",
+    "description": "transport",
+    "price": "1500000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "events.addon",
+  "pk": 7,
+  "fields": {
+    "name": "Accomodation",
+    "description": "Hotel accomodation",
+    "price": "300000.00",
+    "is_active": true
+  }
+},
+{
+  "model": "events.booking",
+  "pk": 6,
+  "fields": {
+    "client": 1,
+    "event_type": "Prewedding Shoot",
+    "event_description": "ddd",
+    "wedding_date": "2025-05-07",
+    "location": "Lagos",
+    "additional_notes": "",
+    "date_booked": "2025-05-28T01:11:24.896Z",
+    "booking_code": "CGWBK-20250528-0002",
+    "invoice_number": "CGINV-20250528-0002",
+    "issue_date": "2025-05-03",
+    "due_date": "2025-05-09",
+    "amount_due": "550000.00",
+    "payment_status": "pending",
+    "tax_rate": "0.00",
+    "delivery_status": "In progress",
+    "Image_link": null,
+    "Video_link": null,
+    "created_at": "2025-05-28T01:11:24.896Z",
+    "updated_at": "2025-06-27T09:20:38.931Z",
+    "packages": [],
+    "Addons": []
+  }
+},
+{
+  "model": "events.booking",
+  "pk": 7,
+  "fields": {
+    "client": 2,
+    "event_type": "White Wedding",
+    "event_description": null,
+    "wedding_date": "2025-09-13",
+    "location": "Enugu",
+    "additional_notes": "My guys Wedding. check it out. sureeeee",
+    "date_booked": "2025-06-13T09:33:08.992Z",
+    "booking_code": "CGWBK-20250613-0001",
+    "invoice_number": "CGINV-20250613-0001",
+    "issue_date": "2025-06-13",
+    "due_date": "2025-06-13",
+    "amount_due": "500000.00",
+    "payment_status": "pending",
+    "tax_rate": "0.00",
+    "delivery_status": "In progress",
+    "Image_link": null,
+    "Video_link": "http://www.google.com",
+    "created_at": "2025-06-13T09:33:08.992Z",
+    "updated_at": "2025-07-09T08:49:34.251Z",
+    "packages": [
+      4
+    ],
+    "Addons": [
+      1,
+      6
+    ]
+  }
+},
+{
+  "model": "events.booking",
+  "pk": 38,
+  "fields": {
+    "client": 5,
+    "event_type": "Prewedding Shoot",
+    "event_description": "Prewedding",
+    "wedding_date": "2025-07-05",
+    "location": "Enugu",
+    "additional_notes": "",
+    "date_booked": "2025-06-29T17:27:09.434Z",
+    "booking_code": "CGWBK-20250629-0001",
+    "invoice_number": "CGINV-20250629-0001",
+    "issue_date": null,
+    "due_date": null,
+    "amount_due": "0.00",
+    "payment_status": "pending",
+    "tax_rate": "0.00",
+    "delivery_status": "In progress",
+    "Image_link": null,
+    "Video_link": null,
+    "created_at": "2025-06-29T17:27:09.435Z",
+    "updated_at": "2025-06-29T17:27:09.435Z",
+    "packages": [],
+    "Addons": []
+  }
+},
+{
+  "model": "events.booking",
+  "pk": 53,
+  "fields": {
+    "client": 4,
+    "event_type": "White Wedding",
+    "event_description": "",
+    "wedding_date": "2025-07-24",
+    "location": "Enugu",
+    "additional_notes": "",
+    "date_booked": "2025-07-03T01:34:32.388Z",
+    "booking_code": "CGWBK-20250703-0001",
+    "invoice_number": "CGINV-20250703-0001",
+    "issue_date": null,
+    "due_date": null,
+    "amount_due": "0.00",
+    "payment_status": "pending",
+    "tax_rate": "0.00",
+    "delivery_status": "In progress",
+    "Image_link": null,
+    "Video_link": null,
+    "created_at": "2025-07-03T01:34:32.388Z",
+    "updated_at": "2025-07-03T01:34:32.388Z",
+    "packages": [],
+    "Addons": []
+  }
+},
+{
+  "model": "events.booking",
+  "pk": 55,
+  "fields": {
+    "client": 6,
+    "event_type": "Traditional Marriage",
+    "event_description": "",
+    "wedding_date": "2025-07-30",
+    "location": "Nsukka",
+    "additional_notes": "happy",
+    "date_booked": "2025-07-03T02:18:41.480Z",
+    "booking_code": "CGWBK-20250703-0002",
+    "invoice_number": "CGINV-20250703-0002",
+    "issue_date": null,
+    "due_date": null,
+    "amount_due": "0.00",
+    "payment_status": "pending",
+    "tax_rate": "0.00",
+    "delivery_status": "In progress",
+    "Image_link": null,
+    "Video_link": null,
+    "created_at": "2025-07-03T02:18:41.480Z",
+    "updated_at": "2025-07-04T01:14:17.196Z",
+    "packages": [],
+    "Addons": []
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 26,
+  "fields": {
+    "invoice": 6,
+    "item_type": "package",
+    "description": "xxxxx",
+    "deliverables": "",
+    "quantity": "1.00",
+    "price": "400000.00",
+    "is_taxable": false,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": null,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 27,
+  "fields": {
+    "invoice": 6,
+    "item_type": "package",
+    "description": "Deluxe Art video",
+    "deliverables": "",
+    "quantity": "1.00",
+    "price": "700000.00",
+    "is_taxable": true,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": 1,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 28,
+  "fields": {
+    "invoice": 6,
+    "item_type": "discount",
+    "description": "",
+    "deliverables": "",
+    "quantity": "1.00",
+    "price": "100000.00",
+    "is_taxable": false,
+    "is_discount": true,
+    "tax_rate": "0.00",
+    "package": null,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 46,
+  "fields": {
+    "invoice": 38,
+    "item_type": "addon",
+    "description": "Accomodation",
+    "deliverables": "",
+    "quantity": "1.00",
+    "price": "300000.00",
+    "is_taxable": true,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": null,
+    "addon": 7
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 47,
+  "fields": {
+    "invoice": 38,
+    "item_type": "addon",
+    "description": "logistics",
+    "deliverables": "",
+    "quantity": "1.00",
+    "price": "1500000.00",
+    "is_taxable": true,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": null,
+    "addon": 6
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 48,
+  "fields": {
+    "invoice": 38,
+    "item_type": "package",
+    "description": "Diamond Combo",
+    "deliverables": "",
+    "quantity": "1.00",
+    "price": "1500000.00",
+    "is_taxable": false,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": 4,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 49,
+  "fields": {
+    "invoice": 38,
+    "item_type": "discount",
+    "description": "DI",
+    "deliverables": "",
+    "quantity": "1.00",
+    "price": "1500000.00",
+    "is_taxable": false,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": null,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 71,
+  "fields": {
+    "invoice": 7,
+    "item_type": "package",
+    "description": "Diamond Combo",
+    "deliverables": "",
+    "quantity": "1.00",
+    "price": "1500000.00",
+    "is_taxable": false,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": 4,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 72,
+  "fields": {
+    "invoice": 7,
+    "item_type": "addon",
+    "description": "Drone Coverage",
+    "deliverables": "",
+    "quantity": "1.00",
+    "price": "100000.00",
+    "is_taxable": true,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": null,
+    "addon": 2
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 73,
+  "fields": {
+    "invoice": 7,
+    "item_type": "addon",
+    "description": "logistics",
+    "deliverables": "",
+    "quantity": "1.00",
+    "price": "1500000.00",
+    "is_taxable": true,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": null,
+    "addon": 6
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 77,
+  "fields": {
+    "invoice": 53,
+    "item_type": "package",
+    "description": "Gold Combo",
+    "deliverables": "",
+    "quantity": "1.00",
+    "price": "1250000.00",
+    "is_taxable": false,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": 5,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 78,
+  "fields": {
+    "invoice": 53,
+    "item_type": "package",
+    "description": "Basic Art Video",
+    "deliverables": "Complete day coverage,\r\nOne videographer,\r\nOne Minute Wedding Highlight,\r\nFull Length Event Video,\r\nUSB Thumb Drive",
+    "quantity": "1.00",
+    "price": "300000.00",
+    "is_taxable": true,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": 2,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 107,
+  "fields": {
+    "invoice": 55,
+    "item_type": "addon",
+    "description": "logistics",
+    "deliverables": "",
+    "quantity": "1.00",
+    "price": "1500000.00",
+    "is_taxable": true,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": null,
+    "addon": 6
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 109,
+  "fields": {
+    "invoice": 55,
+    "item_type": "package",
+    "description": "Diamond Combo",
+    "deliverables": "Full wedding day photography coverage\r\nTwo photographers,\r\n Two Videographers,\r\n Drone Coverage,\r\n 3-5mins Event highlight Video,\r\n Full length Video on USB Drive or DVD,\r\n Softcopies of Entire wedding Images,\r\n Two 12x36 Inch Synthetic Photobook ,\r\n Mini Photobook and Calendar,\r\n Three 16x20 Inch Enlargement Frame\r\n Complementary Prewedding Photoshoot",
+    "quantity": "1.00",
+    "price": "1500000.00",
+    "is_taxable": false,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": 4,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 110,
+  "fields": {
+    "invoice": 55,
+    "item_type": "discount",
+    "description": "Discount",
+    "deliverables": "",
+    "quantity": "1.00",
+    "price": "50000.00",
+    "is_taxable": false,
+    "is_discount": true,
+    "tax_rate": "0.00",
+    "package": null,
+    "addon": null
+  }
+},
+{
+  "model": "events.payment",
+  "pk": 2,
+  "fields": {
+    "invoice": 7,
+    "amount_paid": "1000000.00",
+    "payment_date": "2025-06-13T10:07:39Z",
+    "payment_method": "Bank Transfer",
+    "transaction_id": "",
+    "notes": "",
+    "created_at": "2025-06-13T10:07:52.557Z",
+    "updated_at": "2025-06-29T19:54:58.093Z",
+    "receipt_number": "CGRCP-20250613-0001",
+    "receipt_issued_at": null,
+    "status": "Completed"
+  }
+},
+{
+  "model": "events.payment",
+  "pk": 3,
+  "fields": {
+    "invoice": 6,
+    "amount_paid": "550000.00",
+    "payment_date": "2025-06-27T09:19:32Z",
+    "payment_method": "Bank Transfer",
+    "transaction_id": "",
+    "notes": "",
+    "created_at": "2025-06-27T09:19:48.576Z",
+    "updated_at": "2025-06-27T09:20:38.875Z",
+    "receipt_number": "CGRCP-20250627-0001",
+    "receipt_issued_at": null,
+    "status": "Completed"
+  }
+}
+]

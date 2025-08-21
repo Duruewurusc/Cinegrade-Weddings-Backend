@@ -78,7 +78,7 @@ class Booking(models.Model):
     Addons = models.ManyToManyField(AddOn, related_name='package_addon', blank=True)
     additional_notes = models.TextField(blank=True, null=True)
     date_booked = models.DateTimeField(auto_now_add=True)
-    booking_code = models.CharField(max_length=12, unique=True, editable=False, blank=True)
+    booking_code = models.CharField(max_length=20, unique=True, editable=False, blank=True)
     invoice_number = models.CharField(max_length=20, unique=True, blank=True, null=True)
     issue_date = models.DateField(blank=True, null=True)
     due_date = models.DateField(blank=True, null=True)
