@@ -36,8 +36,8 @@ class Package(models.Model):
     
     class Meta:
         ordering = ['price']
-        verbose_name = 'Wedding Package'
-        verbose_name_plural = 'Wedding Packages'
+        verbose_name = 'Event Package'
+        verbose_name_plural = 'Event Packages'
 
 class AddOn(models.Model):
     name = models.CharField(max_length=100)
