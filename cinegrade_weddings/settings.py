@@ -194,6 +194,12 @@ SIMPLE_JWT = {
 AUTH_USER_MODEL = 'users.Client'
 
 DJOSER = {
+    "LOGIN_FIELD": "email",
+    "PASSWORD_RESET_CONFIRM_URL": "password/reset/confirm/{uid}/{token}",
+    "USERNAME_RESET_CONFIRM_URL": "username/reset/confirm/{uid}/{token}",
+    "ACTIVATION_URL": "activate/{uid}/{token}",
+    "SEND_ACTIVATION_EMAIL": False,
+    "SEND_CONFIRMATION_EMAIL": False,
     'SERIALIZERS' : {
         'user': 'api.serializers.CustomUserSerializer',
         'current_user': 'api.serializers.ClientSerializer',

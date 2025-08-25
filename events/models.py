@@ -15,6 +15,7 @@ from users.models import Client
 
 class Package(models.Model):
     package_name = models.CharField(max_length=100)
+    event_type = models.CharField(max_length=10, choices=[('wedding','wedding'),('burial','burial'),('birthday','birthday'),('corporate','coroprate'),('custom','custom')], default='wedding', null=True, blank=True,)
     category = models.CharField(max_length=10, choices=[('photo','photo'),('video','video'),('combo','combo'),('custom','custom')], default='combo')
     price = models.DecimalField(max_digits=10, decimal_places=2)
     description = models.TextField(blank=True)
@@ -67,6 +68,8 @@ class Booking(models.Model):
         WHITE_WEDDING = 'White Wedding', 'White Wedding'
         TRADITIONAL_MARRIAGE = 'Traditional Marriage', 'Traditional Marriage'
         PREWEDDING_SHOOT = 'Prewedding Shoot','Prewedding Shoot',
+        BURIAL = 'Burial', 'Burial'
+        BIRTHDAY = 'Birthday', 'Birthday'
         OTHERS = 'Others','Others'
 
     client = models.ForeignKey(Client, on_delete=models.CASCADE, related_name='booker', default="")
