@@ -29,7 +29,7 @@ load_dotenv(os.path.join(BASE_DIR, ".env"))
 SECRET_KEY = 'django-insecure-r8-zb@l9#8hu)cmgwv+kvif^l@w1*u4zj#rc04skwavgjxmcpv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get("DEBUG") == 'True'
 
 ALLOWED_HOSTS = ['*']
 
@@ -52,7 +52,8 @@ INSTALLED_APPS = [
     'djoser',
     'company_info',
     'users',
-    'events'
+    'events',
+    'storages'
 ]
 
 MIDDLEWARE = [
@@ -142,15 +143,27 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"
+# STORAGES = {
+#     # ...
+#     "default": {
+#         "BACKEND": "django.core.files.storage.FileSystemStorage",
+#     },
+#     "staticfiles": {
+#         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+#     },
+# }
+
 STORAGES = {
     # ...
     "default": {
-        "BACKEND": "django.core.files.storage.FileSystemStorage",
+        "BACKEND": "storages.backends.s3boto3.S3Boto3Storage",
     },
     "staticfiles": {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -206,3 +219,12 @@ DJOSER = {
         'user_create': 'api.serializers.CustomUserCreateSerializer',
     }
 }
+
+# Supabase S3 credentials
+AWS_ACCESS_KEY_ID = os.getenv("SUPABASE_S3_ACCESS_KEY")
+AWS_SECRET_ACCESS_KEY = os.getenv("SUPABASE_S3_SECRET_KEY")
+AWS_STORAGE_BUCKET_NAME = os.getenv("SUPABASE_S3_BUCKET")
+AWS_S3_ENDPOINT_URL = os.getenv("SUPABASE_S3_ENDPOINT")  # e.g. "https://<project-ref>.supabase.co/storage/v1/s3"
+AWS_S3_REGION_NAME = os.getenv("SUPABASE_REGION")
+# Django storages config
+DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
