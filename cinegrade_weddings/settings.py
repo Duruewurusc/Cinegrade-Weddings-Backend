@@ -228,3 +228,13 @@ AWS_S3_ENDPOINT_URL = os.getenv("SUPABASE_S3_ENDPOINT")  # e.g. "https://<projec
 AWS_S3_REGION_NAME = os.getenv("SUPABASE_REGION")
 # Django storages config
 DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+
+# email settings
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'cinegradevisuals@gmail.com'   # your Gmail
+EMAIL_HOST_PASSWORD = 'gvvh wwxl hlpa fxcl' # generated App Password
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
