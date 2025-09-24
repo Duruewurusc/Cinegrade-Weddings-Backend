@@ -26,7 +26,10 @@ class Client(AbstractUser):
     spouse_phone = PhoneNumberField(region='NG', blank=True) 
     spouse_email = models.EmailField( blank=True)
     spouse_instagram = models.CharField(max_length=100 , blank=True)
-    
+    email = models.EmailField(unique=True)
+    USERNAME_FIELD = 'email'   # login with email
+    REQUIRED_FIELDS = []       # no username required
+
     def __str__(self):
         return self.username or "Unnamed User"
     
