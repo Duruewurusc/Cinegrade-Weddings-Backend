@@ -214,11 +214,14 @@ DJOSER = {
     "SEND_ACTIVATION_EMAIL": False,
     "SEND_CONFIRMATION_EMAIL": False,
     'PASSWORD_CHANGED_EMAIL_CONFIRMATION': True,
+    "DOMAIN": "cinegradeweddings.onrender.com",
+    "SITE_NAME": "Cinegrade Weddings",
     'SERIALIZERS' : {
         'user': 'api.serializers.CustomUserSerializer',
         'current_user': 'api.serializers.ClientSerializer',
         'user_create': 'api.serializers.CustomUserCreateSerializer',
     }
+    
 }
 
 # Supabase S3 credentials
