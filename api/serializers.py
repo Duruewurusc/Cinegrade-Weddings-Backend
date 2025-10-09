@@ -21,6 +21,7 @@ class AddOnSerializer(serializers.ModelSerializer):
 class ClientSerializer(UserSerializer):
     trad_anniversary = serializers.DateField(required=False, allow_null=True)
     wedding_anniversary = serializers.DateField(required=False, allow_null=True)
+    email = serializers.EmailField(required=True)
     class Meta(UserSerializer.Meta):
         model = get_user_model()
         # fields = ['id', 'username', 'email', 'phone']
