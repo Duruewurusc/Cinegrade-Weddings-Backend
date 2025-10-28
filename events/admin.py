@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Package, Booking, Payment, AddOn, InvoiceItem
+from .models import Package, Booking, Payment, AddOn, InvoiceItem, BookingDate
 
 
 
@@ -60,6 +60,6 @@ admin.site.register(Booking, BookingAdmin)
 
 admin.site.register(Package)
 admin.site.register(AddOn)
-# admin.site.register(Invoice, InvoiceAdmin)
 admin.site.register(InvoiceItem, InvoiceItemAdmin )
 admin.site.register(Payment, PaymentAdmin)
+admin.site.register(BookingDate)

@@ -155,9 +155,7 @@ class Booking(models.Model):
             )
 
     def save(self, *args, **kwargs):
-        # groom= Client.objects.get(id=self.client.id)
-        # bookings = groom.booker.all()
-        # print(bookings[1].booking_code)
+     
         
         if not self.booking_code:
             today_str = timezone.now().strftime('%Y%m%d')
@@ -184,24 +182,17 @@ class Booking(models.Model):
 
 
         super().save(*args, **kwargs)
-        # self.create_invoice_items_from_booking()
-        # self.amount_due = self.total_amount
-       
-
-         # Create an invoice if one doesn't exist
-        # if not hasattr(self, 'invoice'):
-        # invoice, created =Invoice.objects.get_or_create(booking=self)
-        # invoice.create_invoice_items_from_booking()
-            # super().save(*args, **kwargs)
-            # Invoice.save()
-        # Invoice.create_invoice_items_from_booking()
-        
         
     def __str__(self):
         return f"{self.booking_code} by {self.client.username}"
         
     
+class BookingDate(models.Model):
+    booking = models.ForeignKey(Booking, on_delete=models.CASCADE, related_name='dates')
+    date = models.DateField()
 
+    def __str__(self):
+        return f"{self.booking.service} - {self.date}"
 
 
 class InvoiceItem(models.Model):

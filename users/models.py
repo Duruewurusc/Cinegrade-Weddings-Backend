@@ -20,6 +20,7 @@ class Client(AbstractUser):
     address= models.CharField(max_length=100, blank=True)
     instagram_handle = models.CharField(max_length=100, blank=True)
     phone = PhoneNumberField(region='NG', blank=True) 
+    birthday = models.DateField(blank=True, null=True)
     trad_anniversary = models.DateField(blank= True, null=True)
     wedding_anniversary = models.DateField(blank=True, null=True)
     spouse_name = models.CharField(max_length=100, blank=True)
