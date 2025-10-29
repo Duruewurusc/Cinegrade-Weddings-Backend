@@ -2,9 +2,14 @@ from django.contrib import admin
 from .models import Package, Booking, Payment, AddOn, InvoiceItem, BookingDate
 
 
+class EventDateInline(admin.TabularInline):
+    model = BookingDate
+    extra = 1
 
+# @admin.register(Booking)    
 class BookingAdmin(admin.ModelAdmin):
-    list_display = ('booking_code', 'client', 'wedding_date', 'total_amount_display','total_payments_made_display','amount_due_display')
+    inlines = [EventDateInline]
+    list_display = ('booking_code', 'client','get_dates', 'total_amount_display','total_payments_made_display','amount_due_display')
     readonly_fields = ('total_amount_display','total_payments_made_display')
 
     ordering = ('-created_at',)  # sort by newest first
@@ -20,6 +25,10 @@ class BookingAdmin(admin.ModelAdmin):
     def total_amount_display(self, obj):
         return f"₦{obj.total_amount:,.2f}"
     total_amount_display.short_description = 'Total Amount'
+
+    def get_dates(self, obj):
+        return ", ".join([str(date.date) for date in obj.event_dates.all()]) or obj.wedding_date
+    get_dates.short_description = 'Event Date'
 
 
 

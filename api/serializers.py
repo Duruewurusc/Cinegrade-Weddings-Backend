@@ -60,10 +60,16 @@ class BookingSerializer(serializers.ModelSerializer):
     
 
     def create(self, validated_data):
+        packages = validated_data.pop('packages', [])
+        addons = validated_data.pop('Addons', [])
         event_dates_data = validated_data.pop('event_dates', [])
         
         booking = Booking.objects.create(**validated_data)
         
+
+           # Now attach the M2M relations properly
+        booking.packages.set(packages)
+        booking.Addons.set(addons)
         # Create event dates
         for event_date_data in event_dates_data:
             BookingDate.objects.create(booking=booking, **event_date_data)

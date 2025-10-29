@@ -65,7 +65,7 @@ class Booking(models.Model):
         DELIVERED = 'Delivered', 'Delivered'
 
     class EventType(models.TextChoices):
-        WHITE_WEDDING = 'White Wedding', 'White Wedding'
+        WEDDING = 'Wedding', 'Wedding'
         TRADITIONAL_MARRIAGE = 'Traditional Marriage', 'Traditional Marriage'
         PREWEDDING_SHOOT = 'Prewedding Shoot','Prewedding Shoot',
         BURIAL = 'Burial', 'Burial'
