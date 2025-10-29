@@ -40,18 +40,14 @@ class BookingDateSerializer(serializers.ModelSerializer):
         fields = ['id', 'date']
 
 class BookingSerializer(serializers.ModelSerializer):
+    event_dates = BookingDateSerializer(many=True, required=False)
     total_amount= serializers.SerializerMethodField()
     total_payments_made = serializers.SerializerMethodField()
     client_name = serializers.CharField(source='client.client_name', read_only=True)
     address = serializers.CharField(source='client.address', read_only=True)
     email = serializers.CharField(source='client.email', read_only=True)
     phone = serializers.CharField(source='client.phone', read_only=True)
-    # wedding_date = serializers.DateField()
-    # invoice_item = serializers.CharField(source=InvoiceItemSerializer, read_only=True)
-
-    # packages_selected = PackageSerializer(many=True, read_only=True)
-    # dates = BookingDateSerializer(many=True, required=False)
-
+ 
     class Meta:
         model = Booking
         fields = '__all__'
@@ -61,6 +57,36 @@ class BookingSerializer(serializers.ModelSerializer):
     
     def get_total_payments_made(self, obj):
         return obj.total_payments_made
+    
+
+    def create(self, validated_data):
+        event_dates_data = validated_data.pop('event_dates', [])
+        
+        booking = Booking.objects.create(**validated_data)
+        
+        # Create event dates
+        for event_date_data in event_dates_data:
+            BookingDate.objects.create(booking=booking, **event_date_data)
+        
+        return booking
+
+    def update(self, instance, validated_data):
+        event_dates_data = validated_data.pop('event_dates', None)
+
+        for attr, value in validated_data.items():
+            setattr(instance, attr, value)
+        instance.save()
+
+        if event_dates_data is not None:
+            instance.event_dates.all().delete()
+            for event_date_data in event_dates_data:
+                BookingDate.objects.create(booking=instance, **event_date_data)
+
+        return instance
+
+
+
+
     
     # def create(self, validated_data):
     #     dates_data = validated_data.pop('dates', [])

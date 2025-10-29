@@ -188,11 +188,27 @@ class Booking(models.Model):
         
     
 class BookingDate(models.Model):
-    booking = models.ForeignKey(Booking, on_delete=models.CASCADE, related_name='dates')
+    booking = models.ForeignKey(Booking, on_delete=models.CASCADE, related_name='event_dates')
     date = models.DateField()
 
     def __str__(self):
-        return f"{self.booking.service} - {self.date}"
+        return f"{self.booking.client} - {self.date}"
+    
+    @property
+    def primary_date(self):
+        """Returns the first event date for backward compatibility"""
+        first_date = self.event_dates.first()
+        return first_date.date if first_date else None
+    
+    @property
+    def all_dates(self):
+        """Returns all event dates as a list"""
+        return list(self.event_dates.values_list('date', flat=True))
+    
+    @property
+    def has_multiple_dates(self):
+        """Check if booking has multiple dates"""
+        return self.event_dates.count() > 1
 
 
 class InvoiceItem(models.Model):
