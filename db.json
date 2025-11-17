@@ -455,619 +455,557 @@
   }
 },
 {
-  "model": "auth.permission",
-  "pk": 1,
-  "fields": {
-    "name": "Can add permission",
-    "content_type": 1,
-    "codename": "add_permission"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 2,
-  "fields": {
-    "name": "Can change permission",
-    "content_type": 1,
-    "codename": "change_permission"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 3,
-  "fields": {
-    "name": "Can delete permission",
-    "content_type": 1,
-    "codename": "delete_permission"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 4,
-  "fields": {
-    "name": "Can view permission",
-    "content_type": 1,
-    "codename": "view_permission"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 5,
-  "fields": {
-    "name": "Can add group",
-    "content_type": 2,
-    "codename": "add_group"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 6,
-  "fields": {
-    "name": "Can change group",
-    "content_type": 2,
-    "codename": "change_group"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 7,
-  "fields": {
-    "name": "Can delete group",
-    "content_type": 2,
-    "codename": "delete_group"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 8,
-  "fields": {
-    "name": "Can view group",
-    "content_type": 2,
-    "codename": "view_group"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 9,
-  "fields": {
-    "name": "Can add content type",
-    "content_type": 3,
-    "codename": "add_contenttype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 10,
-  "fields": {
-    "name": "Can change content type",
-    "content_type": 3,
-    "codename": "change_contenttype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 11,
-  "fields": {
-    "name": "Can delete content type",
-    "content_type": 3,
-    "codename": "delete_contenttype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 12,
-  "fields": {
-    "name": "Can view content type",
-    "content_type": 3,
-    "codename": "view_contenttype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 13,
-  "fields": {
-    "name": "Can add Testimonial",
-    "content_type": 4,
-    "codename": "add_testimonial"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 14,
-  "fields": {
-    "name": "Can change Testimonial",
-    "content_type": 4,
-    "codename": "change_testimonial"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 15,
-  "fields": {
-    "name": "Can delete Testimonial",
-    "content_type": 4,
-    "codename": "delete_testimonial"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 16,
-  "fields": {
-    "name": "Can view Testimonial",
-    "content_type": 4,
-    "codename": "view_testimonial"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 17,
-  "fields": {
-    "name": "Can add user",
-    "content_type": 5,
-    "codename": "add_client"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 18,
-  "fields": {
-    "name": "Can change user",
-    "content_type": 5,
-    "codename": "change_client"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 19,
-  "fields": {
-    "name": "Can delete user",
-    "content_type": 5,
-    "codename": "delete_client"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 20,
-  "fields": {
-    "name": "Can view user",
-    "content_type": 5,
-    "codename": "view_client"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 21,
-  "fields": {
-    "name": "Can add log entry",
-    "content_type": 6,
-    "codename": "add_logentry"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 22,
-  "fields": {
-    "name": "Can change log entry",
-    "content_type": 6,
-    "codename": "change_logentry"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 23,
-  "fields": {
-    "name": "Can delete log entry",
-    "content_type": 6,
-    "codename": "delete_logentry"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 24,
-  "fields": {
-    "name": "Can view log entry",
-    "content_type": 6,
-    "codename": "view_logentry"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 25,
-  "fields": {
-    "name": "Can add session",
-    "content_type": 7,
-    "codename": "add_session"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 26,
-  "fields": {
-    "name": "Can change session",
-    "content_type": 7,
-    "codename": "change_session"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 27,
-  "fields": {
-    "name": "Can delete session",
-    "content_type": 7,
-    "codename": "delete_session"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 28,
-  "fields": {
-    "name": "Can view session",
-    "content_type": 7,
-    "codename": "view_session"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 29,
-  "fields": {
-    "name": "Can add gallery image",
-    "content_type": 8,
-    "codename": "add_galleryimage"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 30,
-  "fields": {
-    "name": "Can change gallery image",
-    "content_type": 8,
-    "codename": "change_galleryimage"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 31,
-  "fields": {
-    "name": "Can delete gallery image",
-    "content_type": 8,
-    "codename": "delete_galleryimage"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 32,
-  "fields": {
-    "name": "Can view gallery image",
-    "content_type": 8,
-    "codename": "view_galleryimage"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 33,
-  "fields": {
-    "name": "Can add Company Information",
-    "content_type": 9,
-    "codename": "add_companyinfo"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 34,
-  "fields": {
-    "name": "Can change Company Information",
-    "content_type": 9,
-    "codename": "change_companyinfo"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 35,
-  "fields": {
-    "name": "Can delete Company Information",
-    "content_type": 9,
-    "codename": "delete_companyinfo"
-  }
-},
-{
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 36,
   "fields": {
-    "name": "Can view Company Information",
-    "content_type": 9,
-    "codename": "view_companyinfo"
+    "action_time": "2025-09-24T00:52:08.542Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "12",
+    "object_repr": "Ashlee",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 37,
   "fields": {
-    "name": "Can add Wedding Package",
-    "content_type": 10,
-    "codename": "add_package"
+    "action_time": "2025-09-24T00:52:08.542Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "11",
+    "object_repr": "damianc",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 38,
   "fields": {
-    "name": "Can change Wedding Package",
-    "content_type": 10,
-    "codename": "change_package"
+    "action_time": "2025-09-24T00:52:08.542Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "10",
+    "object_repr": "Samcee",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 39,
   "fields": {
-    "name": "Can delete Wedding Package",
-    "content_type": 10,
-    "codename": "delete_package"
+    "action_time": "2025-09-24T00:52:08.542Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "8",
+    "object_repr": "DaTreasure",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 40,
   "fields": {
-    "name": "Can view Wedding Package",
-    "content_type": 10,
-    "codename": "view_package"
+    "action_time": "2025-09-24T00:52:08.542Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "6",
+    "object_repr": "ashleyconsty",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 41,
   "fields": {
-    "name": "Can add booking",
-    "content_type": 11,
-    "codename": "add_booking"
+    "action_time": "2025-09-24T00:52:08.542Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "5",
+    "object_repr": "mekus",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 42,
   "fields": {
-    "name": "Can change booking",
-    "content_type": 11,
-    "codename": "change_booking"
+    "action_time": "2025-09-24T00:52:08.542Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "4",
+    "object_repr": "tobit",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 43,
   "fields": {
-    "name": "Can delete booking",
-    "content_type": 11,
-    "codename": "delete_booking"
+    "action_time": "2025-09-24T00:52:08.542Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "3",
+    "object_repr": "vera2",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 44,
   "fields": {
-    "name": "Can view booking",
-    "content_type": 11,
-    "codename": "view_booking"
+    "action_time": "2025-09-24T00:53:04.754Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "2",
+    "object_repr": "Christian92",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 45,
   "fields": {
-    "name": "Can add invoice item",
-    "content_type": 12,
-    "codename": "add_invoiceitem"
+    "action_time": "2025-09-24T00:53:45.259Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Sam",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 46,
   "fields": {
-    "name": "Can change invoice item",
-    "content_type": 12,
-    "codename": "change_invoiceitem"
+    "action_time": "2025-09-25T02:58:00.900Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "15",
+    "object_repr": "duruewurusamuel@gmail.com",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 47,
   "fields": {
-    "name": "Can delete invoice item",
-    "content_type": 12,
-    "codename": "delete_invoiceitem"
+    "action_time": "2025-09-25T03:01:37.183Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "17",
+    "object_repr": "dsccc",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 48,
   "fields": {
-    "name": "Can view invoice item",
-    "content_type": 12,
-    "codename": "view_invoiceitem"
+    "action_time": "2025-09-25T03:01:37.183Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "14",
+    "object_repr": "dsc",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 49,
   "fields": {
-    "name": "Can add Payment Transaction",
+    "action_time": "2025-09-25T17:31:23.955Z",
+    "user": 1,
     "content_type": 13,
-    "codename": "add_payment"
+    "object_id": "4",
+    "object_repr": "Payment #4 - 600000 (Completed)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 50,
   "fields": {
-    "name": "Can change Payment Transaction",
-    "content_type": 13,
-    "codename": "change_payment"
+    "action_time": "2025-10-09T03:24:18.848Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "76",
+    "object_repr": "CGWBK-20250924-0001 by Sam",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 51,
   "fields": {
-    "name": "Can delete Payment Transaction",
-    "content_type": 13,
-    "codename": "delete_payment"
+    "action_time": "2025-10-09T03:24:18.848Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "7",
+    "object_repr": "CGWBK-20250613-0001 by Christian92",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 52,
   "fields": {
-    "name": "Can view Payment Transaction",
-    "content_type": 13,
-    "codename": "view_payment"
+    "action_time": "2025-10-09T03:24:18.848Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "6",
+    "object_repr": "CGWBK-20250528-0002 by Sam",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 53,
   "fields": {
-    "name": "Can add add on",
-    "content_type": 14,
-    "codename": "add_addon"
+    "action_time": "2025-10-09T03:28:52.614Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "20",
+    "object_repr": "DaTreasureEvents",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 54,
   "fields": {
-    "name": "Can change add on",
-    "content_type": 14,
-    "codename": "change_addon"
+    "action_time": "2025-10-09T04:55:23.573Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "20",
+    "object_repr": "DaTreasureEvents",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 55,
   "fields": {
-    "name": "Can delete add on",
-    "content_type": 14,
-    "codename": "delete_addon"
+    "action_time": "2025-10-09T04:59:38.540Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "77",
+    "object_repr": "CGWBK-20251009-0001 by DaTreasureEvents",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
   }
 },
 {
-  "model": "auth.permission",
+  "model": "admin.logentry",
   "pk": 56,
   "fields": {
-    "name": "Can view add on",
-    "content_type": 14,
-    "codename": "view_addon"
+    "action_time": "2025-10-09T05:22:27.441Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "19",
+    "object_repr": "wissyboy",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "contenttypes.contenttype",
-  "pk": 1,
+  "model": "admin.logentry",
+  "pk": 57,
   "fields": {
-    "app_label": "auth",
-    "model": "permission"
+    "action_time": "2025-10-09T05:22:27.441Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "18",
+    "object_repr": "zxcy",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "contenttypes.contenttype",
-  "pk": 2,
+  "model": "admin.logentry",
+  "pk": 58,
   "fields": {
-    "app_label": "auth",
-    "model": "group"
+    "action_time": "2025-10-09T05:46:43.240Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "78",
+    "object_repr": "CGWBK-20251009-0002 by sisteruc",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
   }
 },
 {
-  "model": "contenttypes.contenttype",
-  "pk": 3,
+  "model": "admin.logentry",
+  "pk": 59,
   "fields": {
-    "app_label": "contenttypes",
-    "model": "contenttype"
+    "action_time": "2025-10-09T05:47:51.713Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "132",
+    "object_repr": "Basic Art Video (x1) @ 1500000",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
   }
 },
 {
-  "model": "contenttypes.contenttype",
-  "pk": 4,
+  "model": "admin.logentry",
+  "pk": 60,
   "fields": {
-    "app_label": "users",
-    "model": "testimonial"
+    "action_time": "2025-10-09T06:46:18.062Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "132",
+    "object_repr": "Basic Art Video (x1.00) @ 1500000.00",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "contenttypes.contenttype",
-  "pk": 5,
+  "model": "admin.logentry",
+  "pk": 61,
   "fields": {
-    "app_label": "users",
-    "model": "client"
+    "action_time": "2025-10-09T06:48:16.890Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "133",
+    "object_repr": "Basic Art Video (x1.00) @ 350000.00",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "contenttypes.contenttype",
-  "pk": 6,
+  "model": "admin.logentry",
+  "pk": 62,
   "fields": {
-    "app_label": "admin",
-    "model": "logentry"
+    "action_time": "2025-10-09T07:56:08.112Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "21",
+    "object_repr": "OnyedikaOkoli",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
   }
 },
 {
-  "model": "contenttypes.contenttype",
-  "pk": 7,
+  "model": "admin.logentry",
+  "pk": 63,
   "fields": {
-    "app_label": "sessions",
-    "model": "session"
+    "action_time": "2025-10-28T22:03:33.291Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "5",
+    "object_repr": "Payment #5 - 350000 (Pending)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
   }
 },
 {
-  "model": "contenttypes.contenttype",
-  "pk": 8,
+  "model": "admin.logentry",
+  "pk": 64,
   "fields": {
-    "app_label": "gallery",
-    "model": "galleryimage"
+    "action_time": "2025-10-29T04:43:20.894Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "2",
+    "object_repr": "OnyedikaOkoli - 2025-11-12",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
   }
 },
 {
-  "model": "contenttypes.contenttype",
-  "pk": 9,
+  "model": "admin.logentry",
+  "pk": 65,
   "fields": {
-    "app_label": "company_info",
-    "model": "companyinfo"
+    "action_time": "2025-10-29T04:43:47.771Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "3",
+    "object_repr": "OnyedikaOkoli - 2025-11-15",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
   }
 },
 {
-  "model": "contenttypes.contenttype",
-  "pk": 10,
+  "model": "admin.logentry",
+  "pk": 66,
   "fields": {
-    "app_label": "events",
-    "model": "package"
+    "action_time": "2025-10-29T05:00:12.645Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "27",
+    "object_repr": "ebukaugwu",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
   }
 },
 {
-  "model": "contenttypes.contenttype",
-  "pk": 11,
+  "model": "admin.logentry",
+  "pk": 67,
   "fields": {
-    "app_label": "events",
-    "model": "booking"
+    "action_time": "2025-10-29T05:00:54.416Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "89",
+    "object_repr": "CGWBK-20251029-0001 by ebukaugwu",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
   }
 },
 {
-  "model": "contenttypes.contenttype",
-  "pk": 12,
+  "model": "admin.logentry",
+  "pk": 68,
   "fields": {
-    "app_label": "events",
-    "model": "invoiceitem"
+    "action_time": "2025-10-29T06:21:51.152Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "90",
+    "object_repr": "CGWBK-20251029-0002 by ebukaugwu",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "contenttypes.contenttype",
-  "pk": 13,
+  "model": "admin.logentry",
+  "pk": 69,
   "fields": {
-    "app_label": "events",
-    "model": "payment"
+    "action_time": "2025-10-29T06:38:39.576Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "92",
+    "object_repr": "CGWBK-20251029-0003 by ebukaugwu",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "contenttypes.contenttype",
-  "pk": 14,
+  "model": "admin.logentry",
+  "pk": 70,
   "fields": {
-    "app_label": "events",
-    "model": "addon"
+    "action_time": "2025-10-29T06:38:39.576Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "89",
+    "object_repr": "CGWBK-20251029-0001 by ebukaugwu",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2025-10-29T11:34:11.227Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "83",
+    "object_repr": "CGWBK-20251009-0004 by OnyedikaOkoli",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2025-11-17T07:07:48.353Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "151",
+    "object_repr": "Discount (x1.00) @ 250000.00",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Deliverables\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2025-11-17T07:07:57.750Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "151",
+    "object_repr": "Discount (x1.00) @ 250000.00",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Deliverables\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2025-11-17T07:08:33.182Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "148",
+    "object_repr": "Discount applied (x1.00) @ 500000.00",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Deliverables\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2025-11-17T07:08:35.696Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "148",
+    "object_repr": "Discount applied (x1.00) @ 500000.00",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2025-11-17T07:09:16.397Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "145",
+    "object_repr": "Discount applied (x1.00) @ 500000.00",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Deliverables\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2025-11-17T07:11:04.858Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "137",
+    "object_repr": "Discount applied (x1.00) @ 500000.00",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Deliverables\"]}}]"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0f7onde0ljjyzlh594svgvwiih082cjy",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGllr4i8lPWewdtc2DiBHipMKcXcSKQWUM-_NvEXEdalx7XmOYxIXocTptyPkZ247SA9s90ny1JZ5JLkr8qBd3qaUX9fD_Tuo2Ou21ogcnCoEyQVfdGCjnGX2YM8acnKDDlgGMLYQeTBbtISaCQx5U1B8vuCGN9c:1v6hFW:SHqN5AqQJ4xxjhG9KCK2w3lcvvhqnk_chXz3SRJyum0",
+    "expire_date": "2025-10-23T03:23:26.614Z"
   }
 },
 {
@@ -1080,10 +1018,66 @@
 },
 {
   "model": "sessions.session",
+  "pk": "agt2jgfat9b5hycbrm0rersyow13pae3",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGllr4i8lPWewdtc2DiBHipMKcXcSKQWUM-_NvEXEdalx7XmOYxIXocTptyPkZ247SA9s90ny1JZ5JLkr8qBd3qaUX9fD_Tuo2Ou21ogcnCoEyQVfdGCjnGX2YM8acnKDDlgGMLYQeTBbtISaCQx5U1B8vuCGN9c:1vBIgq:UJmTkt9sgNATQCW3UqhczyzV3lJ20PU77sQWb50ceSI",
+    "expire_date": "2025-11-04T20:10:40.822Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "dok4qb3quqbnbvc2lugtzfeawtq3isk2",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGllr4i8lPWewdtc2DiBHipMKcXcSKQWUM-_NvEXEdalx7XmOYxIXocTptyPkZ247SA9s90ny1JZ5JLkr8qBd3qaUX9fD_Tuo2Ou21ogcnCoEyQVfdGCjnGX2YM8acnKDDlgGMLYQeTBbtISaCQx5U1B8vuCGN9c:1vE3mH:HYSSbXjgKNfVI4v-VNZB62wo4fsMQXrBvVWmnO4BRmU",
+    "expire_date": "2025-11-12T10:51:41.118Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "f29y8h27zvbtcpn077ym4x2exoco7jxn",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGllr4i8lPWewdtc2DiBHipMKcXcSKQWUM-_NvEXEdalx7XmOYxIXocTptyPkZ247SA9s90ny1JZ5JLkr8qBd3qaUX9fD_Tuo2Ou21ogcnCoEyQVfdGCjnGX2YM8acnKDDlgGMLYQeTBbtISaCQx5U1B8vuCGN9c:1v6jRw:_f2GbtbgzwUj-zJisx4dRtY3u0UnhRMZMKQPnnyYtqs",
+    "expire_date": "2025-10-23T05:44:24.897Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "gpmv19gurla4lzwescf2ou023oavfn1a",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGllr4i8lPWewdtc2DiBHipMKcXcSKQWUM-_NvEXEdalx7XmOYxIXocTptyPkZ247SA9s90ny1JZ5JLkr8qBd3qaUX9fD_Tuo2Ou21ogcnCoEyQVfdGCjnGX2YM8acnKDDlgGMLYQeTBbtISaCQx5U1B8vuCGN9c:1vBBy3:CgF7rV5Vv0wH4SbZ92nzcLBgv7DF99etywCClP02dn4",
+    "expire_date": "2025-11-04T12:59:59.268Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "hqsmrmt5oongwg24mkqwr9yx1snkhi5b",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGllr4i8lPWewdtc2DiBHipMKcXcSKQWUM-_NvEXEdalx7XmOYxIXocTptyPkZ247SA9s90ny1JZ5JLkr8qBd3qaUX9fD_Tuo2Ou21ogcnCoEyQVfdGCjnGX2YM8acnKDDlgGMLYQeTBbtISaCQx5U1B8vuCGN9c:1vDzU7:fAdXX_BuzX0FtDFp3kO_ResbznmPqJU5TKqBQY0oZxI",
+    "expire_date": "2025-11-12T06:16:39.941Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "i232k6oh7d7ouv35l4kkkqxsswuax6mt",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGllr4i8lPWewdtc2DiBHipMKcXcSKQWUM-_NvEXEdalx7XmOYxIXocTptyPkZ247SA9s90ny1JZ5JLkr8qBd3qaUX9fD_Tuo2Ou21ogcnCoEyQVfdGCjnGX2YM8acnKDDlgGMLYQeTBbtISaCQx5U1B8vuCGN9c:1vHRk5:Ok7bFB_WQCBexmGl5RkatWTPSlNr0jWLl9R9L0Chvnc",
+    "expire_date": "2025-11-21T19:03:25.443Z"
+  }
+},
+{
+  "model": "sessions.session",
   "pk": "lbzq1hqw7l04s1e1qx9i417oqueib3uz",
   "fields": {
     "session_data": ".eJxVjDsOwjAQRO_iGllr4i8lPWewdtc2DiBHipMKcXcSKQWUM-_NvEXEdalx7XmOYxIXocTptyPkZ247SA9s90ny1JZ5JLkr8qBd3qaUX9fD_Tuo2Ou21ogcnCoEyQVfdGCjnGX2YM8acnKDDlgGMLYQeTBbtISaCQx5U1B8vuCGN9c:1v0fW1:a9y4LlLRXQNsVL32TX9LrtD-7aocK8ImAcwo9gdzRuE",
     "expire_date": "2025-10-06T12:19:33.266Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "mesilj4nx34qu79y4ndjy1qp8txbrswd",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGllr4i8lPWewdtc2DiBHipMKcXcSKQWUM-_NvEXEdalx7XmOYxIXocTptyPkZ247SA9s90ny1JZ5JLkr8qBd3qaUX9fD_Tuo2Ou21ogcnCoEyQVfdGCjnGX2YM8acnKDDlgGMLYQeTBbtISaCQx5U1B8vuCGN9c:1vKbSh:GYbUd8GW8H8Bv3wOf9DyQYFLCBuZpmk46XpOEG4AhP8",
+    "expire_date": "2025-11-30T12:02:31.600Z"
   }
 },
 {
@@ -1096,10 +1090,34 @@
 },
 {
   "model": "sessions.session",
+  "pk": "qqewfvxlfwrcgegfhwjlgljlj3gierm0",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGllr4i8lPWewdtc2DiBHipMKcXcSKQWUM-_NvEXEdalx7XmOYxIXocTptyPkZ247SA9s90ny1JZ5JLkr8qBd3qaUX9fD_Tuo2Ou21ogcnCoEyQVfdGCjnGX2YM8acnKDDlgGMLYQeTBbtISaCQx5U1B8vuCGN9c:1vBIgm:W_4wpXAkBYEtNtTSzU8P4qoQpbB86DIe9-rS17eJ7_g",
+    "expire_date": "2025-11-04T20:10:36.442Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "skt10efyxjnmnk4zwq7klnrpzr8ma4d6",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGllr4i8lPWewdtc2DiBHipMKcXcSKQWUM-_NvEXEdalx7XmOYxIXocTptyPkZ247SA9s90ny1JZ5JLkr8qBd3qaUX9fD_Tuo2Ou21ogcnCoEyQVfdGCjnGX2YM8acnKDDlgGMLYQeTBbtISaCQx5U1B8vuCGN9c:1vDpay:cA2dOyEldWSpt9-tDCHpoEhOlim99215AN0mwX7I0cw",
+    "expire_date": "2025-11-11T19:43:04.602Z"
+  }
+},
+{
+  "model": "sessions.session",
   "pk": "vi9iuuuar0ng9wo32crt3yrl5gc72lzd",
   "fields": {
     "session_data": ".eJxVjDsOwjAQRO_iGllr4i8lPWewdtc2DiBHipMKcXcSKQWUM-_NvEXEdalx7XmOYxIXocTptyPkZ247SA9s90ny1JZ5JLkr8qBd3qaUX9fD_Tuo2Ou21ogcnCoEyQVfdGCjnGX2YM8acnKDDlgGMLYQeTBbtISaCQx5U1B8vuCGN9c:1up562:IGm9BRdCpKDn-J7IdFhujeYyqjOijlnrio9fZ-x0F30",
     "expire_date": "2025-09-04T13:12:50.248Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "wvrf3g8ls3m58lj2q972enwlz7xq6kcv",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGllr4i8lPWewdtc2DiBHipMKcXcSKQWUM-_NvEXEdalx7XmOYxIXocTptyPkZ247SA9s90ny1JZ5JLkr8qBd3qaUX9fD_Tuo2Ou21ogcnCoEyQVfdGCjnGX2YM8acnKDDlgGMLYQeTBbtISaCQx5U1B8vuCGN9c:1vHRkA:Lpg1wVaxZJBZyECWcWCC4s_cqQl5djAd0ThLcHhg5EE",
+    "expire_date": "2025-11-21T19:03:30.212Z"
   }
 },
 {
@@ -1285,7 +1303,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$870000$u5eMYkO23Dn1xLUproNWfR$jG451tUdHZpK0KW6/fU1nizyMMF0irOFbUrXTW6aimw=",
-    "last_login": "2025-09-22T12:19:33.107Z",
+    "last_login": "2025-11-16T20:35:11.549Z",
     "is_superuser": true,
     "username": "Sam",
     "first_name": "Duruewuru",
@@ -1297,13 +1315,14 @@
     "address": "Electronic Engineering Department University of Nigeria. Nsukka",
     "instagram_handle": "",
     "phone": "+2347037663132",
+    "birthday": null,
     "trad_anniversary": null,
     "wedding_anniversary": null,
     "spouse_name": "",
     "spouse_phone": "",
     "spouse_email": "",
     "spouse_instagram": "",
-    "email": "",
+    "email": "duruewurusamuel@gmail.com",
     "groups": [],
     "user_permissions": []
   }
@@ -1320,39 +1339,12 @@
     "last_name": "Chukwu",
     "is_staff": false,
     "is_active": true,
-    "date_joined": "2025-05-27T10:49:42.227Z",
+    "date_joined": "2025-05-27T10:49:42Z",
     "event_role": "",
     "address": "Canada",
     "instagram_handle": "",
     "phone": "+2347037663132",
-    "trad_anniversary": null,
-    "wedding_anniversary": null,
-    "spouse_name": "",
-    "spouse_phone": "",
-    "spouse_email": "",
-    "spouse_instagram": "",
-    "email": "duruewurusamuel@gmail.com",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "users.client",
-  "pk": 3,
-  "fields": {
-    "password": "pbkdf2_sha256$870000$IEOFaEnbsrjlCcdBuiu5Le$s61v5kBk/BERyfsQ0tPH13sA/yd8ctW4X1MiaXx2MEE=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "vera2",
-    "first_name": "Olivera",
-    "last_name": "okeke",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2025-05-27T12:25:44.215Z",
-    "event_role": "",
-    "address": "23 Forest Crescent GRA Enugu",
-    "instagram_handle": "",
-    "phone": "",
+    "birthday": null,
     "trad_anniversary": null,
     "wedding_anniversary": null,
     "spouse_name": "",
@@ -1360,202 +1352,6 @@
     "spouse_email": "",
     "spouse_instagram": "",
     "email": "duruugo67@gmail.com",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "users.client",
-  "pk": 4,
-  "fields": {
-    "password": "pbkdf2_sha256$870000$FQ6en5ZxtL76qSGJ15FEXv$759IPPAmnvpLIa0tRijtc1D8a+hWZy6CuxOFnbIoTFQ=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "tobit",
-    "first_name": "",
-    "last_name": "",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2025-05-27T12:38:50.056Z",
-    "event_role": "",
-    "address": "23 Forest Crescent GRA Enugu",
-    "instagram_handle": "",
-    "phone": "+2348145398004",
-    "trad_anniversary": null,
-    "wedding_anniversary": null,
-    "spouse_name": "",
-    "spouse_phone": "",
-    "spouse_email": "",
-    "spouse_instagram": "",
-    "email": "duruugo67@gmail.com",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "users.client",
-  "pk": 5,
-  "fields": {
-    "password": "pbkdf2_sha256$870000$3gmmox5KsyVIHHZ9fkF56O$L6y+ihxfCYbEw/YdhWwPTNB8WqvnM3qzOmB9+LiUNIY=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "mekus",
-    "first_name": "Christian",
-    "last_name": "Chukwu",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2025-05-27T13:06:44.101Z",
-    "event_role": "",
-    "address": "23 Forest Crescent GRA Enugu",
-    "instagram_handle": "",
-    "phone": "+2348145398004",
-    "trad_anniversary": null,
-    "wedding_anniversary": null,
-    "spouse_name": "",
-    "spouse_phone": "",
-    "spouse_email": "",
-    "spouse_instagram": "",
-    "email": "duruugo67@gmail.com",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "users.client",
-  "pk": 6,
-  "fields": {
-    "password": "thelord1",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "ashleyconsty",
-    "first_name": "Ashley",
-    "last_name": "Lemonwu",
-    "is_staff": false,
-    "is_active": false,
-    "date_joined": "2025-06-20T21:53:00Z",
-    "event_role": "Relation",
-    "address": "",
-    "instagram_handle": "",
-    "phone": "+2347037663132",
-    "trad_anniversary": null,
-    "wedding_anniversary": null,
-    "spouse_name": "",
-    "spouse_phone": "",
-    "spouse_email": "",
-    "spouse_instagram": "",
-    "email": "Ashley@gmail.com",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "users.client",
-  "pk": 8,
-  "fields": {
-    "password": "thelord1i@",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "DaTreasure",
-    "first_name": "Ada Treasure",
-    "last_name": "Ogbodo",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2025-07-02T23:06:41Z",
-    "event_role": "",
-    "address": "",
-    "instagram_handle": "",
-    "phone": "+2348066396683",
-    "trad_anniversary": "2025-07-02",
-    "wedding_anniversary": "2025-07-02",
-    "spouse_name": "",
-    "spouse_phone": "",
-    "spouse_email": "",
-    "spouse_instagram": "",
-    "email": "",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "users.client",
-  "pk": 10,
-  "fields": {
-    "password": "thelord",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "Samcee",
-    "first_name": "Duruewuru",
-    "last_name": "Chukwuemeka",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2025-07-03T00:32:43Z",
-    "event_role": "",
-    "address": "Electronic Engineering Department University of Nigeria. Nsukka",
-    "instagram_handle": "",
-    "phone": "+2347037663133",
-    "trad_anniversary": null,
-    "wedding_anniversary": null,
-    "spouse_name": "",
-    "spouse_phone": "",
-    "spouse_email": "",
-    "spouse_instagram": "",
-    "email": "",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "users.client",
-  "pk": 11,
-  "fields": {
-    "password": "pbkdf2_sha256$870000$LQhOhRjXM4Fd2FXgPi0YzJ$fGzay3NZo3IVKsxQeOHd9/CM6rN72/yTTam99ebWUEA=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "damianc",
-    "first_name": "Duruewuru",
-    "last_name": "Damian",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2025-08-21T15:43:55.664Z",
-    "event_role": "",
-    "address": "23 Forest Crescent GRA Enugu",
-    "instagram_handle": "",
-    "phone": "+2348037754704",
-    "trad_anniversary": null,
-    "wedding_anniversary": null,
-    "spouse_name": "",
-    "spouse_phone": "",
-    "spouse_email": "",
-    "spouse_instagram": "",
-    "email": "duruugo67@gmail.com",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "users.client",
-  "pk": 12,
-  "fields": {
-    "password": "pbkdf2_sha256$870000$nzxfpnAJ4ItLkCuxCixkfS$oTwCSmADafkTkTDIwTKHbI8YYYn5nE4AETjRcQ/HD/g=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "Ashlee",
-    "first_name": "John",
-    "last_name": "Doe",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2025-08-22T07:10:15.778Z",
-    "event_role": "",
-    "address": "Behind flat",
-    "instagram_handle": "",
-    "phone": "+2348145398004",
-    "trad_anniversary": null,
-    "wedding_anniversary": null,
-    "spouse_name": "",
-    "spouse_phone": "",
-    "spouse_email": "",
-    "spouse_instagram": "",
-    "email": "jondoe@gmail.com",
     "groups": [],
     "user_permissions": []
   }
@@ -1577,6 +1373,7 @@
     "address": "Barcelona",
     "instagram_handle": "",
     "phone": "+2347034712501",
+    "birthday": null,
     "trad_anniversary": null,
     "wedding_anniversary": null,
     "spouse_name": "",
@@ -1584,6 +1381,296 @@
     "spouse_email": "",
     "spouse_instagram": "",
     "email": "unjoku@aust.edu.ng",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.client",
+  "pk": 20,
+  "fields": {
+    "password": "thelord1I@",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "DaTreasureEvents",
+    "first_name": "Ogochukwu Treasure",
+    "last_name": "Ogbodo",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-10-09T03:25:14Z",
+    "event_role": "Planner",
+    "address": "Independence Layout Enugu",
+    "instagram_handle": "@datreasureevents",
+    "phone": "+2348066396683",
+    "birthday": null,
+    "trad_anniversary": null,
+    "wedding_anniversary": null,
+    "spouse_name": "",
+    "spouse_phone": "",
+    "spouse_email": "",
+    "spouse_instagram": "",
+    "email": "datreasureevents@gmail.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.client",
+  "pk": 21,
+  "fields": {
+    "password": "thelord",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "OnyedikaOkoli",
+    "first_name": "Onyedika",
+    "last_name": "Okoli",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-10-09T07:52:14Z",
+    "event_role": "Groom",
+    "address": "GRA Enugu",
+    "instagram_handle": "",
+    "phone": "+2348130180206",
+    "birthday": null,
+    "trad_anniversary": "2025-10-15",
+    "wedding_anniversary": "2025-11-15",
+    "spouse_name": "",
+    "spouse_phone": "",
+    "spouse_email": "",
+    "spouse_instagram": "",
+    "email": "onyekaokoli@gmail.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.client",
+  "pk": 22,
+  "fields": {
+    "password": "thelord",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "duruewuruonyinye",
+    "first_name": "Onyinye",
+    "last_name": "Duruewuru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-10-21T13:04:18.985Z",
+    "event_role": "",
+    "address": "",
+    "instagram_handle": "",
+    "phone": "+2348173800961",
+    "birthday": null,
+    "trad_anniversary": null,
+    "wedding_anniversary": "2025-11-22",
+    "spouse_name": "Mercy",
+    "spouse_phone": "",
+    "spouse_email": "",
+    "spouse_instagram": "",
+    "email": "duruewuruonyinye@gmail.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.client",
+  "pk": 23,
+  "fields": {
+    "password": "thelord",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "fiber",
+    "first_name": "Ifeanyi",
+    "last_name": "Lawrence",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-10-25T05:34:57.270Z",
+    "event_role": "",
+    "address": "Portugal",
+    "instagram_handle": "ifeanyilawrence",
+    "phone": "+2347037513959",
+    "birthday": null,
+    "trad_anniversary": null,
+    "wedding_anniversary": "2025-12-27",
+    "spouse_name": "",
+    "spouse_phone": "",
+    "spouse_email": "",
+    "spouse_instagram": "",
+    "email": "ifeanyilawrence@gmail.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.client",
+  "pk": 24,
+  "fields": {
+    "password": "thelord",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "anuliezegwui",
+    "first_name": "Anuli",
+    "last_name": "Ezegwui",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-10-28T18:58:17.355Z",
+    "event_role": "Bride",
+    "address": "",
+    "instagram_handle": "",
+    "phone": "+2348168792042",
+    "birthday": null,
+    "trad_anniversary": "2026-01-17",
+    "wedding_anniversary": "2026-01-24",
+    "spouse_name": "",
+    "spouse_phone": "",
+    "spouse_email": "",
+    "spouse_instagram": "",
+    "email": "kamsi360@gmail.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.client",
+  "pk": 25,
+  "fields": {
+    "password": "thelord",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "ayodeji",
+    "first_name": "Ukachukwu",
+    "last_name": "Ayodeji",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-10-28T19:09:58.200Z",
+    "event_role": "",
+    "address": "Lagos",
+    "instagram_handle": "",
+    "phone": "+2348030670524",
+    "birthday": null,
+    "trad_anniversary": null,
+    "wedding_anniversary": "2025-12-23",
+    "spouse_name": "",
+    "spouse_phone": "",
+    "spouse_email": "",
+    "spouse_instagram": "",
+    "email": "ayoejikee@yahoo.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.client",
+  "pk": 26,
+  "fields": {
+    "password": "thelord",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "ifeomaezegwui",
+    "first_name": "Ifeoma",
+    "last_name": "Ezegwui",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-10-28T21:51:41.395Z",
+    "event_role": "Planner",
+    "address": "Enugu",
+    "instagram_handle": "",
+    "phone": "+2348127710224",
+    "birthday": "1965-01-02",
+    "trad_anniversary": null,
+    "wedding_anniversary": null,
+    "spouse_name": "",
+    "spouse_phone": "",
+    "spouse_email": "",
+    "spouse_instagram": "",
+    "email": "ifeoma.ezegwui@unn.edu.ng",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.client",
+  "pk": 27,
+  "fields": {
+    "password": "thelord",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "ebukaugwu",
+    "first_name": "Ebuka",
+    "last_name": "Ugwu",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-10-29T04:55:45Z",
+    "event_role": "Relation",
+    "address": "Enugu",
+    "instagram_handle": "",
+    "phone": "+2348038725511",
+    "birthday": null,
+    "trad_anniversary": null,
+    "wedding_anniversary": null,
+    "spouse_name": "",
+    "spouse_phone": "",
+    "spouse_email": "",
+    "spouse_instagram": "",
+    "email": "mazibukaz@gmail.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.client",
+  "pk": 28,
+  "fields": {
+    "password": "thelord1I@",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "sopuludimelu",
+    "first_name": "Sopulu",
+    "last_name": "Dimelu",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-11-07T09:35:15.541Z",
+    "event_role": "",
+    "address": "Uk",
+    "instagram_handle": "",
+    "phone": "+2347063015545",
+    "birthday": null,
+    "trad_anniversary": null,
+    "wedding_anniversary": null,
+    "spouse_name": "",
+    "spouse_phone": "",
+    "spouse_email": "",
+    "spouse_instagram": "",
+    "email": "sopuludimelu@gmail.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.client",
+  "pk": 29,
+  "fields": {
+    "password": "thelord",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "idealexecutiveevents",
+    "first_name": "Delight",
+    "last_name": "Echeta",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-11-07T09:41:05.527Z",
+    "event_role": "",
+    "address": "Awka",
+    "instagram_handle": "delightevents",
+    "phone": "+2347063015545",
+    "birthday": null,
+    "trad_anniversary": null,
+    "wedding_anniversary": null,
+    "spouse_name": "",
+    "spouse_phone": "",
+    "spouse_email": "",
+    "spouse_instagram": "",
+    "email": "idealexecutiveevents@gmail.com",
     "groups": [],
     "user_permissions": []
   }
@@ -1844,65 +1931,6 @@
 },
 {
   "model": "events.booking",
-  "pk": 6,
-  "fields": {
-    "client": 1,
-    "event_type": "Prewedding Shoot",
-    "event_description": "ddd",
-    "wedding_date": "2025-05-07",
-    "location": "Lagos",
-    "additional_notes": "",
-    "date_booked": "2025-05-28T01:11:24.896Z",
-    "booking_code": "CGWBK-20250528-0002",
-    "invoice_number": "CGINV-20250528-0002",
-    "issue_date": "2025-05-03",
-    "due_date": "2025-05-09",
-    "amount_due": "450000.00",
-    "payment_status": "pending",
-    "tax_rate": "0.00",
-    "delivery_status": "In progress",
-    "Image_link": null,
-    "Video_link": null,
-    "created_at": "2025-05-28T01:11:24.896Z",
-    "updated_at": "2025-09-22T12:05:14.619Z",
-    "packages": [],
-    "Addons": []
-  }
-},
-{
-  "model": "events.booking",
-  "pk": 7,
-  "fields": {
-    "client": 2,
-    "event_type": "White Wedding",
-    "event_description": null,
-    "wedding_date": "2025-09-13",
-    "location": "Enugu",
-    "additional_notes": "My guys Wedding. check it out. sureeeee",
-    "date_booked": "2025-06-13T09:33:08.992Z",
-    "booking_code": "CGWBK-20250613-0001",
-    "invoice_number": "CGINV-20250613-0001",
-    "issue_date": "2025-06-13",
-    "due_date": "2025-06-13",
-    "amount_due": "2100000.00",
-    "payment_status": "pending",
-    "tax_rate": "0.00",
-    "delivery_status": "In progress",
-    "Image_link": null,
-    "Video_link": "http://www.google.com",
-    "created_at": "2025-06-13T09:33:08.992Z",
-    "updated_at": "2025-09-22T12:05:13.205Z",
-    "packages": [
-      4
-    ],
-    "Addons": [
-      1,
-      6
-    ]
-  }
-},
-{
-  "model": "events.booking",
   "pk": 69,
   "fields": {
     "client": 13,
@@ -1930,17 +1958,17 @@
 },
 {
   "model": "events.booking",
-  "pk": 75,
+  "pk": 77,
   "fields": {
-    "client": 11,
-    "event_type": "Traditional Marriage",
-    "event_description": "Burial Event",
-    "wedding_date": "2025-09-26",
-    "location": "Enugu, Nigeria",
+    "client": 20,
+    "event_type": "Burial",
+    "event_description": "Burial of Pa Odoh",
+    "wedding_date": "2025-10-24",
+    "location": "Aku, Nsukka",
     "additional_notes": "",
-    "date_booked": "2025-09-23T22:23:29.125Z",
-    "booking_code": "CGWBK-20250923-0002",
-    "invoice_number": "CGINV-20250923-0002",
+    "date_booked": "2025-10-09T04:59:37.914Z",
+    "booking_code": "CGWBK-20251009-0001",
+    "invoice_number": "CGINV-20251009-0001",
     "issue_date": null,
     "due_date": null,
     "amount_due": "0.00",
@@ -1949,112 +1977,290 @@
     "delivery_status": "In progress",
     "Image_link": null,
     "Video_link": null,
-    "created_at": "2025-09-23T22:23:29.125Z",
-    "updated_at": "2025-09-23T22:23:29.125Z",
+    "created_at": "2025-10-09T04:59:37.914Z",
+    "updated_at": "2025-10-09T04:59:37.914Z",
     "packages": [],
     "Addons": []
   }
 },
 {
-  "model": "events.invoiceitem",
-  "pk": 26,
+  "model": "events.booking",
+  "pk": 84,
   "fields": {
-    "invoice": 6,
-    "item_type": "package",
-    "description": "xxxxx",
-    "deliverables": "",
-    "quantity": "1.00",
-    "price": "400000.00",
-    "is_taxable": false,
-    "is_discount": false,
+    "client": 21,
+    "event_type": "White Wedding",
+    "event_description": "",
+    "wedding_date": "2025-11-15",
+    "location": "Enugu",
+    "additional_notes": "",
+    "date_booked": "2025-10-09T07:59:43.378Z",
+    "booking_code": "CGWBK-20251009-0005",
+    "invoice_number": "CGINV-20251009-0005",
+    "issue_date": null,
+    "due_date": null,
+    "amount_due": "500000.00",
+    "payment_status": "pending",
     "tax_rate": "0.00",
-    "package": null,
-    "addon": null
+    "delivery_status": "In progress",
+    "Image_link": null,
+    "Video_link": null,
+    "created_at": "2025-10-09T07:59:43.378Z",
+    "updated_at": "2025-10-28T22:03:33.125Z",
+    "packages": [],
+    "Addons": []
   }
 },
 {
-  "model": "events.invoiceitem",
-  "pk": 27,
+  "model": "events.booking",
+  "pk": 85,
   "fields": {
-    "invoice": 6,
-    "item_type": "package",
-    "description": "Deluxe Art video",
-    "deliverables": "",
-    "quantity": "1.00",
-    "price": "700000.00",
-    "is_taxable": true,
-    "is_discount": false,
+    "client": 20,
+    "event_type": "Burial",
+    "event_description": "Thanksgiving Service",
+    "wedding_date": "2025-10-26",
+    "location": "Aku, Nsukka Enugu",
+    "additional_notes": "",
+    "date_booked": "2025-10-09T08:05:56.067Z",
+    "booking_code": "CGWBK-20251009-0006",
+    "invoice_number": "CGINV-20251009-0006",
+    "issue_date": null,
+    "due_date": null,
+    "amount_due": "0.00",
+    "payment_status": "pending",
     "tax_rate": "0.00",
-    "package": 1,
-    "addon": null
+    "delivery_status": "In progress",
+    "Image_link": null,
+    "Video_link": null,
+    "created_at": "2025-10-09T08:05:56.067Z",
+    "updated_at": "2025-10-09T08:05:56.067Z",
+    "packages": [],
+    "Addons": []
   }
 },
 {
-  "model": "events.invoiceitem",
-  "pk": 28,
+  "model": "events.booking",
+  "pk": 86,
   "fields": {
-    "invoice": 6,
-    "item_type": "discount",
-    "description": "",
-    "deliverables": "",
-    "quantity": "1.00",
-    "price": "100000.00",
-    "is_taxable": false,
-    "is_discount": true,
+    "client": 22,
+    "event_type": "White Wedding",
+    "event_description": "Wedding between Onyinye and Mercy",
+    "wedding_date": "2025-11-22",
+    "location": "Enugu",
+    "additional_notes": "",
+    "date_booked": "2025-10-21T13:05:03.015Z",
+    "booking_code": "CGWBK-20251021-0001",
+    "invoice_number": "CGINV-20251021-0001",
+    "issue_date": null,
+    "due_date": null,
+    "amount_due": "0.00",
+    "payment_status": "pending",
     "tax_rate": "0.00",
-    "package": null,
-    "addon": null
+    "delivery_status": "In progress",
+    "Image_link": null,
+    "Video_link": null,
+    "created_at": "2025-10-21T13:05:03.015Z",
+    "updated_at": "2025-10-21T13:09:13.026Z",
+    "packages": [],
+    "Addons": []
   }
 },
 {
-  "model": "events.invoiceitem",
-  "pk": 71,
+  "model": "events.booking",
+  "pk": 87,
   "fields": {
-    "invoice": 7,
-    "item_type": "package",
-    "description": "Diamond Combo",
-    "deliverables": "",
-    "quantity": "1.00",
-    "price": "1500000.00",
-    "is_taxable": false,
-    "is_discount": false,
+    "client": 23,
+    "event_type": "White Wedding",
+    "event_description": "Wedding of Ifeanyi Lawrence Ugwu at Nsukka",
+    "wedding_date": "2025-12-27",
+    "location": "Nsukka",
+    "additional_notes": "",
+    "date_booked": "2025-10-25T07:31:44.350Z",
+    "booking_code": "CGWBK-20251025-0001",
+    "invoice_number": "CGINV-20251025-0001",
+    "issue_date": null,
+    "due_date": null,
+    "amount_due": "0.00",
+    "payment_status": "pending",
     "tax_rate": "0.00",
-    "package": 4,
-    "addon": null
+    "delivery_status": "In progress",
+    "Image_link": null,
+    "Video_link": null,
+    "created_at": "2025-10-25T07:31:44.350Z",
+    "updated_at": "2025-10-25T07:31:44.350Z",
+    "packages": [],
+    "Addons": []
   }
 },
 {
-  "model": "events.invoiceitem",
-  "pk": 72,
+  "model": "events.booking",
+  "pk": 88,
   "fields": {
-    "invoice": 7,
-    "item_type": "addon",
-    "description": "Drone Coverage",
-    "deliverables": "",
-    "quantity": "1.00",
-    "price": "100000.00",
-    "is_taxable": true,
-    "is_discount": false,
+    "client": 25,
+    "event_type": "White Wedding",
+    "event_description": "Traditional and White Wedding of Chika and Ejike",
+    "wedding_date": "2025-12-23",
+    "location": "Enugu State",
+    "additional_notes": "",
+    "date_booked": "2025-10-28T19:27:20.469Z",
+    "booking_code": "CGWBK-20251028-0001",
+    "invoice_number": "CGINV-20251028-0001",
+    "issue_date": null,
+    "due_date": null,
+    "amount_due": "0.00",
+    "payment_status": "pending",
     "tax_rate": "0.00",
-    "package": null,
-    "addon": 2
+    "delivery_status": "In progress",
+    "Image_link": null,
+    "Video_link": null,
+    "created_at": "2025-10-28T19:27:20.469Z",
+    "updated_at": "2025-10-28T19:27:20.469Z",
+    "packages": [],
+    "Addons": []
   }
 },
 {
-  "model": "events.invoiceitem",
-  "pk": 73,
+  "model": "events.booking",
+  "pk": 91,
   "fields": {
-    "invoice": 7,
-    "item_type": "addon",
-    "description": "logistics",
-    "deliverables": "",
-    "quantity": "1.00",
-    "price": "1500000.00",
-    "is_taxable": true,
-    "is_discount": false,
+    "client": 27,
+    "event_type": "Birthday",
+    "event_description": "90th birthday celebration",
+    "wedding_date": null,
+    "location": "Ngwo, Enugu",
+    "additional_notes": "",
+    "date_booked": "2025-10-29T06:25:09.972Z",
+    "booking_code": "CGWBK-20251029-0002",
+    "invoice_number": "CGINV-20251029-0002",
+    "issue_date": null,
+    "due_date": null,
+    "amount_due": "0.00",
+    "payment_status": "pending",
     "tax_rate": "0.00",
-    "package": null,
-    "addon": 6
+    "delivery_status": "In progress",
+    "Image_link": null,
+    "Video_link": null,
+    "created_at": "2025-10-29T06:25:09.972Z",
+    "updated_at": "2025-11-09T19:02:09.239Z",
+    "packages": [],
+    "Addons": []
+  }
+},
+{
+  "model": "events.booking",
+  "pk": 93,
+  "fields": {
+    "client": 24,
+    "event_type": "Wedding",
+    "event_description": "Traditional and white wedding between Anuli Ezegwui and Kenechukwu Ike",
+    "wedding_date": null,
+    "location": "Anambra, Enugu",
+    "additional_notes": "",
+    "date_booked": "2025-10-29T12:08:35.309Z",
+    "booking_code": "CGWBK-20251029-0003",
+    "invoice_number": "CGINV-20251029-0003",
+    "issue_date": null,
+    "due_date": null,
+    "amount_due": "0.00",
+    "payment_status": "pending",
+    "tax_rate": "0.00",
+    "delivery_status": "In progress",
+    "Image_link": null,
+    "Video_link": null,
+    "created_at": "2025-10-29T12:08:35.309Z",
+    "updated_at": "2025-10-29T12:08:35.309Z",
+    "packages": [],
+    "Addons": []
+  }
+},
+{
+  "model": "events.booking",
+  "pk": 95,
+  "fields": {
+    "client": 29,
+    "event_type": "Wedding",
+    "event_description": "Church Wedding between Sopulu and Precious",
+    "wedding_date": null,
+    "location": "Nsukka",
+    "additional_notes": "Prewedding on 17th December\nWedding on 3rd January",
+    "date_booked": "2025-11-07T09:44:26.029Z",
+    "booking_code": "CGWBK-20251107-0001",
+    "invoice_number": "CGINV-20251107-0001",
+    "issue_date": null,
+    "due_date": null,
+    "amount_due": "0.00",
+    "payment_status": "pending",
+    "tax_rate": "0.00",
+    "delivery_status": "In progress",
+    "Image_link": null,
+    "Video_link": null,
+    "created_at": "2025-11-07T09:44:26.029Z",
+    "updated_at": "2025-11-09T18:00:39.613Z",
+    "packages": [],
+    "Addons": []
+  }
+},
+{
+  "model": "events.bookingdate",
+  "pk": 2,
+  "fields": {
+    "booking": 84,
+    "date": "2025-11-12"
+  }
+},
+{
+  "model": "events.bookingdate",
+  "pk": 3,
+  "fields": {
+    "booking": 84,
+    "date": "2025-11-15"
+  }
+},
+{
+  "model": "events.bookingdate",
+  "pk": 9,
+  "fields": {
+    "booking": 93,
+    "date": "2026-01-17"
+  }
+},
+{
+  "model": "events.bookingdate",
+  "pk": 10,
+  "fields": {
+    "booking": 93,
+    "date": "2026-01-24"
+  }
+},
+{
+  "model": "events.bookingdate",
+  "pk": 12,
+  "fields": {
+    "booking": 95,
+    "date": "2025-12-17"
+  }
+},
+{
+  "model": "events.bookingdate",
+  "pk": 13,
+  "fields": {
+    "booking": 95,
+    "date": "2026-01-03"
+  }
+},
+{
+  "model": "events.bookingdate",
+  "pk": 16,
+  "fields": {
+    "booking": 91,
+    "date": "2025-12-19"
+  }
+},
+{
+  "model": "events.bookingdate",
+  "pk": 17,
+  "fields": {
+    "booking": 91,
+    "date": "2025-12-20"
   }
 },
 {
@@ -2076,14 +2282,184 @@
 },
 {
   "model": "events.invoiceitem",
-  "pk": 128,
+  "pk": 136,
   "fields": {
-    "invoice": 75,
-    "item_type": "other",
-    "description": "wedding",
-    "deliverables": "1 photo",
+    "invoice": 84,
+    "item_type": "package",
+    "description": "Silver Combo",
+    "deliverables": "One photographer,\r\nOne Videographer,\r\n8x10inch Synthetic Photobook,\r\nFull Length Video on USB Drive,\r\nSoft Copies of entire Wedding Images,\r\nOne 16x20inch Enlargement Frame",
     "quantity": "1.00",
-    "price": "1500000.00",
+    "price": "1000000.00",
+    "is_taxable": false,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": 9,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 137,
+  "fields": {
+    "invoice": 84,
+    "item_type": "discount",
+    "description": "Discount applied",
+    "deliverables": "N500,000 discount",
+    "quantity": "1.00",
+    "price": "500000.00",
+    "is_taxable": false,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": null,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 140,
+  "fields": {
+    "invoice": 86,
+    "item_type": "package",
+    "description": "Silver Combo",
+    "deliverables": "One photographer,\r\nOne Videographer,\r\n8x10inch Synthetic Photobook,\r\nFull Length Video on USB Drive,\r\nSoft Copies of entire Wedding Images,\r\nOne 16x20inch Enlargement Frame",
+    "quantity": "1.00",
+    "price": "1000000.00",
+    "is_taxable": false,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": 9,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 141,
+  "fields": {
+    "invoice": 86,
+    "item_type": "discount",
+    "description": "Discount applied",
+    "deliverables": "100% discount",
+    "quantity": "1.00",
+    "price": "1000000.00",
+    "is_taxable": false,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": null,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 142,
+  "fields": {
+    "invoice": 87,
+    "item_type": "package",
+    "description": "Basic Art Video",
+    "deliverables": "Complete day coverage,\r\nOne videographer,\r\nOne Minute Wedding Highlight,\r\nFull Length Event Video,\r\nUSB Thumb Drive",
+    "quantity": "1.00",
+    "price": "350000.00",
+    "is_taxable": false,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": 2,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 143,
+  "fields": {
+    "invoice": 87,
+    "item_type": "package",
+    "description": "Photo Basic",
+    "deliverables": "One photographer,\r\n150 Individually Edited Images,\r\nUSB thumb Drive of entire Wedding Images,\r\nOnline Viewing Gallery",
+    "quantity": "1.00",
+    "price": "350000.00",
+    "is_taxable": false,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": 3,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 144,
+  "fields": {
+    "invoice": 88,
+    "item_type": "package",
+    "description": "Silver Combo",
+    "deliverables": "One photographer,\r\nOne Videographer,\r\n8x10inch Synthetic Photobook,\r\nFull Length Video on USB Drive,\r\nSoft Copies of entire Wedding Images,\r\nOne 16x20inch Enlargement Frame",
+    "quantity": "1.00",
+    "price": "1000000.00",
+    "is_taxable": false,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": 9,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 145,
+  "fields": {
+    "invoice": 88,
+    "item_type": "discount",
+    "description": "Discount applied",
+    "deliverables": "N500,000 discount",
+    "quantity": "1.00",
+    "price": "500000.00",
+    "is_taxable": false,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": null,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 147,
+  "fields": {
+    "invoice": 93,
+    "item_type": "package",
+    "description": "Gold Combo",
+    "deliverables": "Two photographer,\r\nTwo Videographer,\r\n3-5mins Event Highlight video,\r\nFull Length Video on USB Drive,\r\nSoftcopies of Entire Wedding Images,\r\nOne 12X24Inch Synthetic Photobook,\r\nThree16x20Inch Enlargement Frame",
+    "quantity": "2.00",
+    "price": "1250000.00",
+    "is_taxable": false,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": 5,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 148,
+  "fields": {
+    "invoice": 93,
+    "item_type": "discount",
+    "description": "Discount applied",
+    "deliverables": "N500,000 discount",
+    "quantity": "1.00",
+    "price": "500000.00",
+    "is_taxable": false,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": null,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 149,
+  "fields": {
+    "invoice": 95,
+    "item_type": "other",
+    "description": "Custom Combo Package",
+    "deliverables": "1x Photographer\n1x Videographer\n12x24inch synthetic photobook\nWedding Highlight Video\n3x Complementary Wall frames",
+    "quantity": "1.00",
+    "price": "800000.00",
     "is_taxable": true,
     "is_discount": false,
     "tax_rate": "0.00",
@@ -2093,15 +2469,49 @@
 },
 {
   "model": "events.invoiceitem",
-  "pk": 129,
+  "pk": 150,
   "fields": {
-    "invoice": 75,
-    "item_type": "discount",
-    "description": "Discount applied",
-    "deliverables": "N13,000 discount",
+    "invoice": 91,
+    "item_type": "other",
+    "description": "Event Documentary",
+    "deliverables": "Photography and Videography for medical outreach on 18th December\nSoft copies of images.\n3mins Highlight Video",
     "quantity": "1.00",
-    "price": "13000.00",
+    "price": "500000.00",
+    "is_taxable": true,
+    "is_discount": false,
+    "tax_rate": "0.00",
+    "package": null,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 151,
+  "fields": {
+    "invoice": 91,
+    "item_type": "discount",
+    "description": "Discount",
+    "deliverables": "N250000",
+    "quantity": "1.00",
+    "price": "250000.00",
     "is_taxable": false,
+    "is_discount": true,
+    "tax_rate": "0.00",
+    "package": null,
+    "addon": null
+  }
+},
+{
+  "model": "events.invoiceitem",
+  "pk": 152,
+  "fields": {
+    "invoice": 91,
+    "item_type": "other",
+    "description": "Event Documentary",
+    "deliverables": "Photography and videography for 90th birthday on 20th December\nFull  length Video\n3mins highlight\n12x24inch synthetic photobook",
+    "quantity": "1.00",
+    "price": "500000.00",
+    "is_taxable": true,
     "is_discount": false,
     "tax_rate": "0.00",
     "package": null,
@@ -2110,36 +2520,19 @@
 },
 {
   "model": "events.payment",
-  "pk": 2,
+  "pk": 5,
   "fields": {
-    "invoice": 7,
-    "amount_paid": "1000000.00",
-    "payment_date": "2025-06-13T10:07:39Z",
+    "invoice": 84,
+    "amount_paid": "350000.00",
+    "payment_date": "2025-10-28T22:02:55Z",
     "payment_method": "Bank Transfer",
     "transaction_id": "",
     "notes": "",
-    "created_at": "2025-06-13T10:07:52.557Z",
-    "updated_at": "2025-06-29T19:54:58.093Z",
-    "receipt_number": "CGRCP-20250613-0001",
+    "created_at": "2025-10-28T22:03:32.622Z",
+    "updated_at": "2025-10-28T22:03:32.622Z",
+    "receipt_number": "CGRCP-20251028-0001",
     "receipt_issued_at": null,
-    "status": "Completed"
-  }
-},
-{
-  "model": "events.payment",
-  "pk": 3,
-  "fields": {
-    "invoice": 6,
-    "amount_paid": "550000.00",
-    "payment_date": "2025-06-27T09:19:32Z",
-    "payment_method": "Bank Transfer",
-    "transaction_id": "",
-    "notes": "",
-    "created_at": "2025-06-27T09:19:48.576Z",
-    "updated_at": "2025-06-27T09:20:38.875Z",
-    "receipt_number": "CGRCP-20250627-0001",
-    "receipt_issued_at": null,
-    "status": "Completed"
+    "status": "Pending"
   }
 }
 ]
