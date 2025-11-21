@@ -181,7 +181,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://cinegradeweddings.onrender.com",
     "https://cinegradevisuals.com",
     "https://www.cinegradevisuals.com",
-    "https://api.cinegradevisuals.com",
+    "http://api.cinegradevisuals.com",
 ]
 
 # Optional if using cookies or credentials

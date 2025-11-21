@@ -11,6 +11,8 @@ class GalleryImage(models.Model):
         ('wedding', 'Wedding'),
         ('engagement', 'Engagement'),
         ('portrait', 'Portrait'),
+        ('funeral', 'Funeral'),
+        ('others', 'Others'),
     ])
     date_taken = models.DateField(blank=True, null=True)
     slug = models.SlugField(max_length=200, unique=False, blank=True)
