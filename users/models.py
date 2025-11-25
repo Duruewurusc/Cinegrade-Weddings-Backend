@@ -20,13 +20,17 @@ class Client(AbstractUser):
     address= models.CharField(max_length=100, blank=True)
     instagram_handle = models.CharField(max_length=100, blank=True)
     phone = PhoneNumberField(region='NG', blank=True) 
+    birthday = models.DateField(blank=True, null=True)
     trad_anniversary = models.DateField(blank= True, null=True)
     wedding_anniversary = models.DateField(blank=True, null=True)
     spouse_name = models.CharField(max_length=100, blank=True)
     spouse_phone = PhoneNumberField(region='NG', blank=True) 
     spouse_email = models.EmailField( blank=True)
     spouse_instagram = models.CharField(max_length=100 , blank=True)
-    
+    email = models.EmailField(unique=True)
+    USERNAME_FIELD = 'email'   # login with email
+    REQUIRED_FIELDS = []       # no username required
+
     def __str__(self):
         return self.username or "Unnamed User"
     

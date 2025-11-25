@@ -12,9 +12,14 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from datetime import timedelta
 from pathlib import Path
 import os
+import dj_database_url
+from dotenv import load_dotenv
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(os.path.join(BASE_DIR, ".env"))
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -24,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-r8-zb@l9#8hu)cmgwv+kvif^l@w1*u4zj#rc04skwavgjxmcpv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get("DEBUG") == 'True'
 
 ALLOWED_HOSTS = ['*']
 
@@ -47,7 +52,8 @@ INSTALLED_APPS = [
     'djoser',
     'company_info',
     'users',
-    'events'
+    'events',
+    'storages'
 ]
 
 MIDDLEWARE = [
@@ -87,11 +93,17 @@ WSGI_APPLICATION = 'cinegrade_weddings.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.config(
+        default=os.environ.get("DATABASE_URL")
+    )
 }
 
 
@@ -131,12 +143,27 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"
+# STORAGES = {
+#     # ...
+#     "default": {
+#         "BACKEND": "django.core.files.storage.FileSystemStorage",
+#     },
+#     "staticfiles": {
+#         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+#     },
+# }
+
 STORAGES = {
     # ...
+    "default": {
+        "BACKEND": "storages.backends.s3boto3.S3Boto3Storage",
+    },
     "staticfiles": {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -151,6 +178,10 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://cinegradeweddings.onrender.com",
+    "https://cinegradevisuals.com",
+    "https://www.cinegradevisuals.com",
+    "http://api.cinegradevisuals.com",
 ]
 
 # Optional if using cookies or credentials
@@ -173,6 +204,9 @@ REST_FRAMEWORK = {
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
+    'ROTATE_REFRESH_TOKENS': True,
+    'BLACKLIST_AFTER_ROTATION': True,
+    'UPDATE_LAST_LOGIN': True,
 
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
@@ -180,9 +214,38 @@ SIMPLE_JWT = {
 AUTH_USER_MODEL = 'users.Client'
 
 DJOSER = {
+    "LOGIN_FIELD": "email",
+    "PASSWORD_RESET_CONFIRM_URL": "password/reset/confirm/{uid}/{token}",
+    "USERNAME_RESET_CONFIRM_URL": "username/reset/confirm/{uid}/{token}",
+    "ACTIVATION_URL": "activate/{uid}/{token}",
+    "SEND_ACTIVATION_EMAIL": False,
+    "SEND_CONFIRMATION_EMAIL": False,
+    'PASSWORD_CHANGED_EMAIL_CONFIRMATION': True,
+    # "DOMAIN": "cinegradeweddings.onrender.com",
+    # "SITE_NAME": "Cinegrade Weddings",
     'SERIALIZERS' : {
         'user': 'api.serializers.CustomUserSerializer',
         'current_user': 'api.serializers.ClientSerializer',
         'user_create': 'api.serializers.CustomUserCreateSerializer',
     }
+    
 }
+
+# Supabase S3 credentials
+AWS_ACCESS_KEY_ID = os.getenv("SUPABASE_S3_ACCESS_KEY")
+AWS_SECRET_ACCESS_KEY = os.getenv("SUPABASE_S3_SECRET_KEY")
+AWS_STORAGE_BUCKET_NAME = os.getenv("SUPABASE_S3_BUCKET")
+AWS_S3_ENDPOINT_URL = os.getenv("SUPABASE_S3_ENDPOINT")  # e.g. "https://<project-ref>.supabase.co/storage/v1/s3"
+AWS_S3_REGION_NAME = os.getenv("SUPABASE_REGION")
+# Django storages config
+DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+
+# email settings
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")   # your Gmail
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD") # generated App Password
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

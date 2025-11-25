@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from events.models import Package, Booking, Client, InvoiceItem, Payment, AddOn
+from events.models import Package, Booking, Client, InvoiceItem, Payment, AddOn, BookingDate
 from gallery.models import GalleryImage
 from company_info.models import CompanyInfo
 from users.models import Testimonial 
@@ -21,6 +21,7 @@ class AddOnSerializer(serializers.ModelSerializer):
 class ClientSerializer(UserSerializer):
     trad_anniversary = serializers.DateField(required=False, allow_null=True)
     wedding_anniversary = serializers.DateField(required=False, allow_null=True)
+    email = serializers.EmailField(required=True)
     class Meta(UserSerializer.Meta):
         model = get_user_model()
         # fields = ['id', 'username', 'email', 'phone']
@@ -33,20 +34,20 @@ class InvoiceItemSerializer(serializers.ModelSerializer):
         # depth = 1
 
 
-
+class BookingDateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = BookingDate
+        fields = ['id', 'date','date_location']
 
 class BookingSerializer(serializers.ModelSerializer):
+    event_dates = BookingDateSerializer(many=True, required=False)
     total_amount= serializers.SerializerMethodField()
     total_payments_made = serializers.SerializerMethodField()
     client_name = serializers.CharField(source='client.client_name', read_only=True)
     address = serializers.CharField(source='client.address', read_only=True)
     email = serializers.CharField(source='client.email', read_only=True)
     phone = serializers.CharField(source='client.phone', read_only=True)
-    # wedding_date = serializers.DateField()
-    # invoice_item = serializers.CharField(source=InvoiceItemSerializer, read_only=True)
-
-    packages_selected = PackageSerializer(many=True, read_only=True)
-
+ 
     class Meta:
         model = Booking
         fields = '__all__'
@@ -56,6 +57,42 @@ class BookingSerializer(serializers.ModelSerializer):
     
     def get_total_payments_made(self, obj):
         return obj.total_payments_made
+    
+
+    def create(self, validated_data):
+        packages = validated_data.pop('packages', [])
+        addons = validated_data.pop('Addons', [])
+        event_dates_data = validated_data.pop('event_dates', [])
+        
+        booking = Booking.objects.create(**validated_data)
+        
+
+           # Now attach the M2M relations properly
+        booking.packages.set(packages)
+        booking.Addons.set(addons)
+        # Create event dates
+        for event_date_data in event_dates_data:
+            BookingDate.objects.create(booking=booking, **event_date_data)
+        
+        return booking
+
+    def update(self, instance, validated_data):
+        event_dates_data = validated_data.pop('event_dates', None)
+
+        for attr, value in validated_data.items():
+            setattr(instance, attr, value)
+        instance.save()
+
+        if event_dates_data is not None:
+            instance.event_dates.all().delete()
+            for event_date_data in event_dates_data:
+                BookingDate.objects.create(booking=instance, **event_date_data)
+
+        return instance
+
+
+
+
 
 class PaymentSerializer(serializers.ModelSerializer):
     invoice = BookingSerializer(read_only=True)

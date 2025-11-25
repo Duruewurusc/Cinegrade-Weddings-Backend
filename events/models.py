@@ -15,6 +15,7 @@ from users.models import Client
 
 class Package(models.Model):
     package_name = models.CharField(max_length=100)
+    event_type = models.CharField(max_length=10, choices=[('wedding','wedding'),('burial','burial'),('birthday','birthday'),('corporate','coroprate'),('custom','custom')], default='wedding', null=True, blank=True,)
     category = models.CharField(max_length=10, choices=[('photo','photo'),('video','video'),('combo','combo'),('custom','custom')], default='combo')
     price = models.DecimalField(max_digits=10, decimal_places=2)
     description = models.TextField(blank=True)
@@ -35,8 +36,8 @@ class Package(models.Model):
     
     class Meta:
         ordering = ['price']
-        verbose_name = 'Wedding Package'
-        verbose_name_plural = 'Wedding Packages'
+        verbose_name = 'Event Package'
+        verbose_name_plural = 'Event Packages'
 
 class AddOn(models.Model):
     name = models.CharField(max_length=100)
@@ -64,21 +65,23 @@ class Booking(models.Model):
         DELIVERED = 'Delivered', 'Delivered'
 
     class EventType(models.TextChoices):
-        WHITE_WEDDING = 'White Wedding', 'White Wedding'
+        WEDDING = 'Wedding', 'Wedding'
         TRADITIONAL_MARRIAGE = 'Traditional Marriage', 'Traditional Marriage'
         PREWEDDING_SHOOT = 'Prewedding Shoot','Prewedding Shoot',
+        BURIAL = 'Burial', 'Burial'
+        BIRTHDAY = 'Birthday', 'Birthday'
         OTHERS = 'Others','Others'
 
     client = models.ForeignKey(Client, on_delete=models.CASCADE, related_name='booker', default="")
     event_type = models.CharField(max_length=255, choices=EventType.choices, blank=True, null=True)
     event_description = models.CharField(max_length=255, blank=True, null=True)
     wedding_date = models.DateField(blank=True, null=True)
-    location = models.CharField(max_length=255)
+    location = models.CharField(max_length=255, blank=True, null=True )
     packages = models.ManyToManyField(Package, related_name='bookings', blank=True)
     Addons = models.ManyToManyField(AddOn, related_name='package_addon', blank=True)
     additional_notes = models.TextField(blank=True, null=True)
     date_booked = models.DateTimeField(auto_now_add=True)
-    booking_code = models.CharField(max_length=12, unique=True, editable=False, blank=True)
+    booking_code = models.CharField(max_length=20, unique=True, editable=False, blank=True)
     invoice_number = models.CharField(max_length=20, unique=True, blank=True, null=True)
     issue_date = models.DateField(blank=True, null=True)
     due_date = models.DateField(blank=True, null=True)
@@ -95,6 +98,18 @@ class Booking(models.Model):
     
     class Meta:
         ordering = ['-issue_date']
+    
+    @property
+    def primary_event(self):
+        first = self.event_dates.first()
+        return {
+            "date": first.date,
+            "location": first.date_location
+        } if first else None
+
+    @property
+    def all_event_details(self):
+        return list(self.event_dates.values("date", "date_location"))
 
     @property
     def total_amount(self):
@@ -152,9 +167,7 @@ class Booking(models.Model):
             )
 
     def save(self, *args, **kwargs):
-        # groom= Client.objects.get(id=self.client.id)
-        # bookings = groom.booker.all()
-        # print(bookings[1].booking_code)
+     
         
         if not self.booking_code:
             today_str = timezone.now().strftime('%Y%m%d')
@@ -181,24 +194,34 @@ class Booking(models.Model):
 
 
         super().save(*args, **kwargs)
-        # self.create_invoice_items_from_booking()
-        # self.amount_due = self.total_amount
-       
-
-         # Create an invoice if one doesn't exist
-        # if not hasattr(self, 'invoice'):
-        # invoice, created =Invoice.objects.get_or_create(booking=self)
-        # invoice.create_invoice_items_from_booking()
-            # super().save(*args, **kwargs)
-            # Invoice.save()
-        # Invoice.create_invoice_items_from_booking()
-        
         
     def __str__(self):
         return f"{self.booking_code} by {self.client.username}"
         
     
+class BookingDate(models.Model):
+    booking = models.ForeignKey(Booking, on_delete=models.CASCADE, related_name='event_dates')
+    date = models.DateField()
+    date_location = models.CharField(max_length=255, blank=True, null= True)
 
+    def __str__(self):
+        return f"{self.booking.client} - {self.date} @ {self.date_location}"
+    
+    @property
+    def primary_date(self):
+        """Returns the first event date for backward compatibility"""
+        first_date = self.event_dates.first()
+        return first_date.date if first_date else None
+    
+    @property
+    def all_dates(self):
+        """Returns all event dates as a list"""
+        return list(self.event_dates.values_list('date', flat=True))
+    
+    @property
+    def has_multiple_dates(self):
+        """Check if booking has multiple dates"""
+        return self.event_dates.count() > 1
 
 
 class InvoiceItem(models.Model):

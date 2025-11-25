@@ -43,6 +43,8 @@ class BookingViewSet(viewsets.ModelViewSet):
         if user.is_staff or user.is_superuser:
             return Booking.objects.all().order_by('-wedding_date')
         return Booking.objects.filter(client=user).order_by('-wedding_date')
+    # def perform_create(self, serializer):
+    #     serializer.save(user=self.request.user)
     
 class PaymentViewSet(viewsets.ModelViewSet):
     queryset = Payment.objects.all()
