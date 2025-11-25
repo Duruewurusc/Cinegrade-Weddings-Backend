@@ -37,7 +37,7 @@ class InvoiceItemSerializer(serializers.ModelSerializer):
 class BookingDateSerializer(serializers.ModelSerializer):
     class Meta:
         model = BookingDate
-        fields = ['id', 'date']
+        fields = ['id', 'date','date_location']
 
 class BookingSerializer(serializers.ModelSerializer):
     event_dates = BookingDateSerializer(many=True, required=False)
@@ -91,29 +91,6 @@ class BookingSerializer(serializers.ModelSerializer):
         return instance
 
 
-
-
-    
-    # def create(self, validated_data):
-    #     dates_data = validated_data.pop('dates', [])
-    #     booking = Booking.objects.create(**validated_data)
-    #     for date_data in dates_data:
-    #         BookingDate.objects.create(booking=booking, **date_data)
-    #     return booking
-
-    # def update(self, instance, validated_data):
-    #     dates_data = validated_data.pop('dates', None)
-
-    #     for attr, value in validated_data.items():
-    #         setattr(instance, attr, value)
-    #     instance.save()
-
-    #     if dates_data is not None:
-    #         instance.dates.all().delete()
-    #         for date_data in dates_data:
-    #             BookingDate.objects.create(booking=instance, **date_data)
-
-    #     return instance
 
 
 

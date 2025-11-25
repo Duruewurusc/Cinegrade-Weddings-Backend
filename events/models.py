@@ -76,7 +76,7 @@ class Booking(models.Model):
     event_type = models.CharField(max_length=255, choices=EventType.choices, blank=True, null=True)
     event_description = models.CharField(max_length=255, blank=True, null=True)
     wedding_date = models.DateField(blank=True, null=True)
-    location = models.CharField(max_length=255)
+    location = models.CharField(max_length=255, blank=True, null=True )
     packages = models.ManyToManyField(Package, related_name='bookings', blank=True)
     Addons = models.ManyToManyField(AddOn, related_name='package_addon', blank=True)
     additional_notes = models.TextField(blank=True, null=True)
@@ -98,6 +98,18 @@ class Booking(models.Model):
     
     class Meta:
         ordering = ['-issue_date']
+    
+    @property
+    def primary_event(self):
+        first = self.event_dates.first()
+        return {
+            "date": first.date,
+            "location": first.date_location
+        } if first else None
+
+    @property
+    def all_event_details(self):
+        return list(self.event_dates.values("date", "date_location"))
 
     @property
     def total_amount(self):
@@ -190,9 +202,10 @@ class Booking(models.Model):
 class BookingDate(models.Model):
     booking = models.ForeignKey(Booking, on_delete=models.CASCADE, related_name='event_dates')
     date = models.DateField()
+    date_location = models.CharField(max_length=255, blank=True, null= True)
 
     def __str__(self):
-        return f"{self.booking.client} - {self.date}"
+        return f"{self.booking.client} - {self.date} @ {self.date_location}"
     
     @property
     def primary_date(self):
