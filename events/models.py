@@ -307,7 +307,7 @@ class Payment(models.Model):
     # balance = models.DecimalField(max_digits=10,decimal_places=2,validators=[MinValueValidator(0.01)])
     receipt_number = models.CharField(max_length=20, unique=True, blank=True, null=True)
     receipt_issued_at = models.DateTimeField(blank=True, null=True)
-    status = models.CharField(max_length=20, choices=PaymentStatus.choices, default=PaymentStatus.PENDING)
+    # status = models.CharField(max_length=20, choices=PaymentStatus.choices, default=PaymentStatus.PENDING)
 
 
     @property

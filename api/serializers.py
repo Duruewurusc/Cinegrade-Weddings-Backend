@@ -95,7 +95,14 @@ class BookingSerializer(serializers.ModelSerializer):
 
 
 class PaymentSerializer(serializers.ModelSerializer):
-    invoice = BookingSerializer(read_only=True)
+    # invoice = serializers.PrimaryKeyRelatedField(queryset=Booking.objects.all())
+    # Write: accept only booking ID
+    invoice = serializers.PrimaryKeyRelatedField(
+        queryset=Booking.objects.all(), write_only=True
+    )
+
+    # Read: return full booking details
+    invoice_details = BookingSerializer(source="invoice", read_only=True)
     class Meta:
         model = Payment
         fields = '__all__'

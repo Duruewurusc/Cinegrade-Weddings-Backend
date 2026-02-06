@@ -52,6 +52,8 @@ class Testimonial(models.Model):
     ]
 
     name = models.CharField(max_length=100)
+    dp = models.ImageField(upload_to='dp/', blank=True, null=True,
+                           help_text="Optional display picture")
     location = models.CharField(max_length=100, blank=True, null=True)
     role_or_company = models.CharField(max_length=100, blank=True, null=True, 
                                       help_text="Person's role or company (optional)")
